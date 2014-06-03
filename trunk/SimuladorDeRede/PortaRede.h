@@ -11,21 +11,30 @@
 #include "Cabo.h"
 #include "IP.h"
 #include "MAC.h"
+#include <string>
+#include <vector>
+
+using namespace std;
 
 class PortaRede
 {
 
 public:
 	PortaRede();
-	virtual ~PortaRede();
-	Cabo *m_Cabo;
-	IP *m_IP;
-	MAC *m_MAC;
-
-	void abre(vector<bit> bits);
-
+    void abre(vector<string> bits);
+    int getNumero();
+    void setNumero(int numero);
+    Cabo* getCabo();
+    void setCabo(Cabo* cabo);
+    IP* getIp();
+    void setIp(IP* ip);
+    MAC* getMac();
+    void setMac(MAC* mac);
 private:
 	int numero;
+    Cabo* cabo;
+    IP* ip;
+    MAC* mac;
 
 };
 #endif // !defined(EA_B19DF204_637A_4c30_B623_996FA63A6AC5__INCLUDED_)

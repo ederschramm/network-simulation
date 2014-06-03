@@ -7,13 +7,14 @@
 
 #include "MAC.h"
 
-
 MAC::MAC(){
 
 }
 
+string MAC::getEnderco(){
+    return this->endereco;
+}
 
-
-MAC::~MAC(){
-
+void MAC::setEndereco(string endereco){
+    this->endereco = endereco;
 }

@@ -8,19 +8,13 @@
 #if !defined(EA_3A866053_89D6_4867_86FA_8C1FE5A6D920__INCLUDED_)
 #define EA_3A866053_89D6_4867_86FA_8C1FE5A6D920__INCLUDED_
 
+#include "Datagrama.h"
+
 class I
 {
 
 public:
-	I() {
-
-	}
-
-	virtual ~I() {
-
-	}
-
-	virtual void abrir(Datagrama datagrama) =0;
+    virtual void abrir(Datagrama* datagrama) =0;
 
 };
 #endif // !defined(EA_3A866053_89D6_4867_86FA_8C1FE5A6D920__INCLUDED_)

@@ -7,21 +7,10 @@
 
 #include "Cabo.h"
 
-
 Cabo::Cabo(){
 
 }
 
-
-
-Cabo::~Cabo(){
-
-}
-
-
-
-
-
-void Cabo::envia(vector<bit> bits){
+void Cabo::envia(vector<string> bits){
 
 }

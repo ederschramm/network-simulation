@@ -9,18 +9,25 @@
 #define EA_417495C4_62C2_4a6c_868E_7618EB2DF7D6__INCLUDED_
 
 #include "Segmento.h"
+#include <string>
+
+using namespace std;
 
 class Datagrama
 {
 
 public:
 	Datagrama();
-	virtual ~Datagrama();
-	Segmento *m_Segmento;
-
+    string getDestino();
+    void setDestino(string destino);
+    string getOrigem();
+    void setOrigem(string origem);
+    Segmento* getDado();
+    void setDado(Segmento* dado);
 private:
 	string destino;
 	string origem;
+    Segmento* dado;
 
 };
 #endif // !defined(EA_417495C4_62C2_4a6c_868E_7618EB2DF7D6__INCLUDED_)

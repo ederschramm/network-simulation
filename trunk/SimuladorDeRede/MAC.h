@@ -8,15 +8,18 @@
 #if !defined(EA_70D07AE8_FA51_4719_9A98_A267C3401557__INCLUDED_)
 #define EA_70D07AE8_FA51_4719_9A98_A267C3401557__INCLUDED_
 
+#include <string>
+
+using namespace std;
+
 class MAC
 {
 
 public:
 	MAC();
-	virtual ~MAC();
-
+    string getEnderco();
+    void setEndereco(string endereco);
 private:
 	string endereco;
-
 };
 #endif // !defined(EA_70D07AE8_FA51_4719_9A98_A267C3401557__INCLUDED_)

@@ -7,21 +7,42 @@
 
 #include "PortaRede.h"
 
-
 PortaRede::PortaRede(){
 
 }
 
-
-
-PortaRede::~PortaRede(){
-
+void PortaRede::abre(vector<string> bits){
+    //iplementar
 }
 
+int PortaRede::getNumero(){
+    return this->numero;
+}
 
+void PortaRede::setNumero(int numero){
+    this->numero = numero;
+}
 
+Cabo* PortaRede::getCabo(){
+    return this->cabo;
+}
 
+void PortaRede::setCabo(Cabo *cabo){
+    this->cabo = cabo;
+}
 
-void PortaRede::abre(vector<bit> bits){
+IP* PortaRede::getIp(){
+    return this->ip;
+}
 
+void PortaRede::setIp(IP *ip){
+    this->ip = ip;
+}
+
+MAC* PortaRede::getMac(){
+    return this->mac;
+}
+
+void PortaRede::setMac(MAC *mac){
+    this->mac = mac;
 }

@@ -19,12 +19,10 @@ class Computador : public Equipamento, public I, public T, public A, public NI
 
 public:
 	Computador();
-	virtual ~Computador();
-
-	virtual void abrir(Frame frame);
-	virtual void abrir(Datagrama datagrama);
-	virtual void abrir(Segmento segmento);
-	virtual void abrir(Dado dado);
+    virtual void abrir(Frame* frame);
+    virtual void abrir(Datagrama* datagrama);
+    virtual void abrir(Segmento* segmento);
+    virtual void abrir(Dado* dado);
 
 };
 #endif // !defined(EA_2AE89DAE_7BE2_4716_AE13_F6BC1C380877__INCLUDED_)

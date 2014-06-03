@@ -8,19 +8,13 @@
 #if !defined(EA_0753EBF4_02C0_4fa8_BB9B_1511A1C0444E__INCLUDED_)
 #define EA_0753EBF4_02C0_4fa8_BB9B_1511A1C0444E__INCLUDED_
 
+#include "Dado.h"
+
 class A
 {
 
 public:
-	A() {
-
-	}
-
-	virtual ~A() {
-
-	}
-
-	virtual void abrir(Dado dado) =0;
+    virtual void abrir(Dado* dado) =0;
 
 };
 #endif // !defined(EA_0753EBF4_02C0_4fa8_BB9B_1511A1C0444E__INCLUDED_)
