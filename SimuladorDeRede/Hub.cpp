@@ -7,21 +7,10 @@
 
 #include "Hub.h"
 
-
 Hub::Hub(){
 
 }
 
-
-
-Hub::~Hub(){
-
-}
-
-
-
-
-
-void Hub::abrir(Frame frame){
-
+void Hub::abrir(Frame *frame){
+    //implementar
 }

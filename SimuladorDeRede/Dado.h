@@ -8,13 +8,17 @@
 #if !defined(EA_F22FCCE9_E41A_43a0_8528_80B4E59CB7DF__INCLUDED_)
 #define EA_F22FCCE9_E41A_43a0_8528_80B4E59CB7DF__INCLUDED_
 
+#include <string>
+
+using namespace std;
+
 class Dado
 {
 
 public:
 	Dado();
-	virtual ~Dado();
-
+    string getMensagem();
+    void setMensagem(string mensagem);
 private:
 	string mensagem;
 

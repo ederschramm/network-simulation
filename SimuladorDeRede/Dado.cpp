@@ -7,13 +7,14 @@
 
 #include "Dado.h"
 
-
 Dado::Dado(){
 
 }
 
+string Dado::getMensagem(){
+    return this->mensagem;
+}
 
-
-Dado::~Dado(){
-
+void Dado::setMensagem(string mensagem){
+    this->mensagem = mensagem;
 }

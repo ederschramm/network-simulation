@@ -9,18 +9,25 @@
 #define EA_C46A3B96_C973_4a47_B415_4ED89455D0E0__INCLUDED_
 
 #include "Datagrama.h"
+#include <string>
+
+using namespace std;
 
 class Frame
 {
 
 public:
 	Frame();
-	virtual ~Frame();
-	Datagrama *m_Datagrama;
-
+    string getDestino();
+    void setDestino(string destino);
+    string getOrigem();
+    void setOrigem(string origem);
+    Datagrama* getDado();
+    void setDado(Datagrama* dado);
 private:
 	string destino;
 	string origem;
+    Datagrama* dado;
 
 };
 #endif // !defined(EA_C46A3B96_C973_4a47_B415_4ED89455D0E0__INCLUDED_)

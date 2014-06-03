@@ -9,17 +9,24 @@
 #define EA_192C10D8_CF88_4c41_BC82_0939EAC0496B__INCLUDED_
 
 #include "PortaRede.h"
+#include <vector>
+#include <string>
+
+using namespace std;
 
 class Equipamento
 {
 
 public:
 	Equipamento();
-	virtual ~Equipamento();
-	PortaRede *m_PortaRede;
-
+    string getNome();
+    void setNome(string nome);
+    vector<PortaRede*> getPortas();
+    void adicionaPorta(PortaRede* porta);
+    void removePorta(PortaRede* porta);
 private:
 	string nome;
+    vector<PortaRede*> portas;
 
 };
 #endif // !defined(EA_192C10D8_CF88_4c41_BC82_0939EAC0496B__INCLUDED_)

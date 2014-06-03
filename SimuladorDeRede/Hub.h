@@ -16,9 +16,6 @@ class Hub : public Equipamento, public NI
 
 public:
 	Hub();
-	virtual ~Hub();
-
-	void abrir(Frame frame);
-
+    void abrir(Frame* frame);
 };
 #endif // !defined(EA_DD92E5A1_7938_4aa2_9109_62A458A16B3F__INCLUDED_)

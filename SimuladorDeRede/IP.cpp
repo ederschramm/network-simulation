@@ -7,13 +7,14 @@
 
 #include "IP.h"
 
-
 IP::IP(){
 
 }
 
+string IP::getEndereco(){
+    return this->endereco;
+}
 
-
-IP::~IP(){
-
+void IP::setEndereco(string endereco){
+    this->endereco = endereco;
 }

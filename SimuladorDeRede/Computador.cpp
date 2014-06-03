@@ -12,31 +12,18 @@ Computador::Computador(){
 
 }
 
-
-
-Computador::~Computador(){
+void Computador::abrir(Frame *frame){
 
 }
 
-
-
-
-
-void Computador::abrir(Frame frame){
+void Computador::abrir(Datagrama *datagrama){
 
 }
 
-
-void Computador::abrir(Datagrama datagrama){
-
-}
-
-
-void Computador::abrir(Segmento segmento){
+void Computador::abrir(Segmento *segmento){
 
 }
 
-
-void Computador::abrir(Dado dado){
+void Computador::abrir(Dado *dado){
 
 }

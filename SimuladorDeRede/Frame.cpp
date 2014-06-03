@@ -7,13 +7,26 @@
 
 #include "Frame.h"
 
-
 Frame::Frame(){
 
 }
 
+string Frame::getDestino(){
+    return this->destino;
+}
 
+void Frame::setDestino(string destino){
+    this->destino = destino;
+}
 
-Frame::~Frame(){
+string Frame::getOrigem(){
+    return this->origem;
+}
 
+Datagrama* Frame::getDado(){
+    return this->dado;
+}
+
+void Frame::setDado(Datagrama *dado){
+    this->dado = dado;
 }

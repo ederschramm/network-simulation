@@ -8,19 +8,13 @@
 #if !defined(EA_836A364F_DCA5_46f1_9A08_661F56783EC5__INCLUDED_)
 #define EA_836A364F_DCA5_46f1_9A08_661F56783EC5__INCLUDED_
 
+#include "Segmento.h"
+
 class T
 {
 
 public:
-	T() {
-
-	}
-
-	virtual ~T() {
-
-	}
-
-	virtual void abrir(Segmento segmento) =0;
+    virtual void abrir(Segmento* segmento) =0;
 
 };
 #endif // !defined(EA_836A364F_DCA5_46f1_9A08_661F56783EC5__INCLUDED_)

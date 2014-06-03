@@ -8,14 +8,17 @@
 #if !defined(EA_314CE177_3463_413a_BD07_CC3BE530A997__INCLUDED_)
 #define EA_314CE177_3463_413a_BD07_CC3BE530A997__INCLUDED_
 
+#include <string>
+#include <vector>
+
+using namespace std;
+
 class Cabo
 {
 
 public:
 	Cabo();
-	virtual ~Cabo();
-
-	void envia(vector<bit> bits);
+    void envia(vector<string> bits);
 
 private:
 	string tipo;
