@@ -7,13 +7,30 @@
 
 #include "Segmento.h"
 
-
 Segmento::Segmento(){
 
 }
 
+string Segmento::getDestino(){
+    return this->destino;
+}
 
+void Segmento::setDestino(string destino){
+    this->destino = destino;
+}
 
-Segmento::~Segmento(){
+string Segmento::getOrigem(){
+    return this->origem;
+}
 
+void Segmento::setOrigem(string origem){
+    this->origem = origem;
+}
+
+Dado* Segmento::getDado(){
+    return this->dado;
+}
+
+void Segmento::setDado(Dado *dado){
+    this->dado = dado;
 }

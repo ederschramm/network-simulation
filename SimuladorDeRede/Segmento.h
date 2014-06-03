@@ -9,18 +9,23 @@
 #define EA_91319C17_77A2_4bf1_BA78_856D3875544C__INCLUDED_
 
 #include "Dado.h"
+#include <string>
 
 class Segmento
 {
 
 public:
 	Segmento();
-	virtual ~Segmento();
-	Dado *m_Dado;
-
+    string getDestino();
+    void setDestino(string destino);
+    string getOrigem();
+    void setOrigem(string origem);
+    Dado* getDado();
+    void setDado(Dado* dado);
 private:
 	string destino;
 	string origem;
+    Dado* dado;
 
 };
 #endif // !defined(EA_91319C17_77A2_4bf1_BA78_856D3875544C__INCLUDED_)

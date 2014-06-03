@@ -7,26 +7,14 @@
 
 #include "Roteador.h"
 
-
 Roteador::Roteador(){
 
 }
 
-
-
-Roteador::~Roteador(){
+void Roteador::abrir(Datagrama *datagrama){
 
 }
 
-
-
-
-
-void Roteador::abrir(Datagrama datagrama){
-
-}
-
-
-void Roteador::abrir(Frame frame){
+void Roteador::abrir(Frame *frame){
 
 }
