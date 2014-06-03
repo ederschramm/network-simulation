@@ -11,6 +11,10 @@ Cabo::Cabo(){
 
 }
 
-void Cabo::envia(vector<string> bits){
-
+void Cabo::envia(vector<string> bits, PortaRede* porta){
+    if (porta == this->a){
+        b->abre(bits);
+    } else {
+        a->abre(bits);
+    }
 }

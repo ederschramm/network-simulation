@@ -12,7 +12,15 @@ PortaRede::PortaRede(){
 }
 
 void PortaRede::abre(vector<string> bits){
-    //iplementar
+
+}
+
+Equipamento* PortaRede::getEquipamento(){
+    return this->equipamento;
+}
+
+void PortaRede::setEquipamento(Equipamento *equipamento){
+    this->equipamento = equipamento;
 }
 
 int PortaRede::getNumero(){
