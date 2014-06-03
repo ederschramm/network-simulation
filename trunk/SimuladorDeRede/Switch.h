@@ -16,9 +16,7 @@ class Switch : public Equipamento, public NI
 
 public:
 	Switch();
-	virtual ~Switch();
-
-	virtual void abrir(Frame frame);
+    virtual void abrir(Frame* frame);
 
 };
 #endif // !defined(EA_C54289FD_F71D_4c5f_A2CA_F35BFCFB0F41__INCLUDED_)

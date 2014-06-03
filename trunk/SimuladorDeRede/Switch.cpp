@@ -7,21 +7,10 @@
 
 #include "Switch.h"
 
-
 Switch::Switch(){
 
 }
 
-
-
-Switch::~Switch(){
-
-}
-
-
-
-
-
-void Switch::abrir(Frame frame){
+void Switch::abrir(Frame *frame){
 
 }
