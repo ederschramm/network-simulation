@@ -10,7 +10,3 @@
 Switch::Switch(){
 
 }
-
-void Switch::abrir(Frame *frame){
-
-}

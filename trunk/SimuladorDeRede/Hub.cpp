@@ -11,6 +11,3 @@ Hub::Hub(){
 
 }
 
-void Hub::abrir(Frame *frame){
-    //implementar
-}

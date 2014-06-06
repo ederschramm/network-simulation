@@ -14,12 +14,11 @@
 #include "A.h"
 #include "NI.h"
 
-class Computador : public Equipamento, public I, public T, public A, public NI
+class Computador : public Equipamento, public I, public T, public A
 {
 
 public:
 	Computador();
-    virtual void abrir(Frame* frame);
     virtual void abrir(Datagrama* datagrama);
     virtual void abrir(Segmento* segmento);
     virtual void abrir(Dado* dado);

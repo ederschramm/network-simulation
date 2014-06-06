@@ -11,12 +11,10 @@
 #include "Equipamento.h"
 #include "NI.h"
 
-class Switch : public Equipamento, public NI
+class Switch : public Equipamento
 {
 
 public:
 	Switch();
-    virtual void abrir(Frame* frame);
-
 };
 #endif // !defined(EA_C54289FD_F71D_4c5f_A2CA_F35BFCFB0F41__INCLUDED_)

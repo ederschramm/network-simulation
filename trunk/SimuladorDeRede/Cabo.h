@@ -9,6 +9,7 @@
 #define EA_314CE177_3463_413a_BD07_CC3BE530A997__INCLUDED_
 
 #include "PortaRede.h"
+#include "Frame.h"
 #include <string>
 #include <vector>
 
@@ -21,7 +22,7 @@ class Cabo
 
 public:
 	Cabo();
-    void envia(vector<string> bits, PortaRede* porta);
+    void envia(Frame* frame, PortaRede* porta);
 
 private:
 	string tipo;
