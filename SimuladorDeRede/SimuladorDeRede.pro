@@ -24,7 +24,11 @@ SOURCES += main.cpp\
         PortaRede.cpp\
         Roteador.cpp\
         Segmento.cpp\
-        Switch.cpp
+        Switch.cpp \
+    ConfiguracaoHubDialog.cpp \
+    ConfiguracaoHostDialog.cpp \
+    ConfiguracaoRoteadorDialog.cpp \
+    ConfiguracaoSwitchDialog.cpp
 
 HEADERS  += mainwindow.h\
         A.h\
@@ -43,6 +47,17 @@ HEADERS  += mainwindow.h\
         Roteador.h\
         Segmento.h\
         Switch.h\
-        T.h
+        T.h \
+    ConfiguracaoHubDialog.h \
+    ConfiguracaoHostDialog.h \
+    ConfiguracaoRoteadorDialog.h \
+    ConfiguracaoSwitchDialog.h
 
-FORMS    += mainwindow.ui
+FORMS    += mainwindow.ui \
+    ConfiguracaoHubDialog.ui \
+    ConfiguracaoHostDialog.ui \
+    ConfiguracaoRoteadorDialog.ui \
+    ConfiguracaoSwitchDialog.ui
+
+RESOURCES += \
+    Recursos.qrc
