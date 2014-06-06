@@ -1,0 +1,11 @@
+<RCC>
+    <qresource prefix="/new/imagens">
+        <file>imagens/iHub.png</file>
+        <file>imagens/iRouter.png</file>
+        <file>imagens/iSwitch.png</file>
+        <file>imagens/iWorkstation.png</file>
+        <file>imagens/cross.jpg</file>
+        <file>imagens/straight.jpg</file>
+        <file>imagens/iMultiDevices.png</file>
+    </qresource>
+</RCC>
