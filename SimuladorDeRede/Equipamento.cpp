@@ -31,6 +31,4 @@ void Equipamento::removePorta(PortaRede *porta){
     //implementar
 }
 
-void Equipamento::abrir(Frame *frame){
 
-}

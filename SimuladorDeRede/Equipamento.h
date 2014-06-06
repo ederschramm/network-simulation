@@ -27,9 +27,10 @@ public:
     vector<PortaRede*> getPortas();
     void adicionaPorta(PortaRede* porta);
     void removePorta(PortaRede* porta);
-    void abrir(Frame *frame);
+    virtual void abrir(Frame *frame) = 0;
 private:
 	string nome;
+protected:
     vector<PortaRede*> portas;
 
 };
