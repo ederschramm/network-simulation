@@ -14,6 +14,8 @@
 
 using namespace std;
 
+class PortaRede;
+
 class Equipamento
 {
 
