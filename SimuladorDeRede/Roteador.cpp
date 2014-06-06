@@ -15,6 +15,3 @@ void Roteador::abrir(Datagrama *datagrama){
 
 }
 
-void Roteador::abrir(Frame *frame){
-
-}

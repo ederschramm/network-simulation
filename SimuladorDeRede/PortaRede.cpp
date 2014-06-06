@@ -11,8 +11,7 @@ PortaRede::PortaRede(){
 
 }
 
-void PortaRede::abre(vector<string> bits){
-
+void PortaRede::abre(Frame *frame){
 }
 
 Equipamento* PortaRede::getEquipamento(){

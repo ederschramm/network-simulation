@@ -11,11 +11,10 @@
 #include "Equipamento.h"
 #include "NI.h"
 
-class Hub : public Equipamento, public NI
+class Hub : public Equipamento
 {
 
 public:
 	Hub();
-    void abrir(Frame* frame);
 };
 #endif // !defined(EA_DD92E5A1_7938_4aa2_9109_62A458A16B3F__INCLUDED_)

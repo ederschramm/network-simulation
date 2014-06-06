@@ -12,6 +12,7 @@
 #include "IP.h"
 #include "MAC.h"
 #include "Equipamento.h"
+#include "Frame.h"
 #include <string>
 #include <vector>
 
@@ -25,7 +26,7 @@ class PortaRede
 
 public:
 	PortaRede();
-    void abre(vector<string> bits);
+    void abre(Frame* frame);
     int getNumero();
     void setNumero(int numero);
     Cabo* getCabo();

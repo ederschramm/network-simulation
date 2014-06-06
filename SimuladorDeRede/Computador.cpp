@@ -12,10 +12,6 @@ Computador::Computador(){
 
 }
 
-void Computador::abrir(Frame *frame){
-
-}
-
 void Computador::abrir(Datagrama *datagrama){
 
 }

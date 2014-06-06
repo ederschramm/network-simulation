@@ -9,6 +9,7 @@
 #define EA_192C10D8_CF88_4c41_BC82_0939EAC0496B__INCLUDED_
 
 #include "PortaRede.h"
+#include "NI.h"
 #include <vector>
 #include <string>
 
@@ -16,7 +17,7 @@ using namespace std;
 
 class PortaRede;
 
-class Equipamento
+class Equipamento : public NI
 {
 
 public:
@@ -26,6 +27,7 @@ public:
     vector<PortaRede*> getPortas();
     void adicionaPorta(PortaRede* porta);
     void removePorta(PortaRede* porta);
+    void abrir(Frame *frame);
 private:
 	string nome;
     vector<PortaRede*> portas;
