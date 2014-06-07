@@ -28,7 +28,8 @@ SOURCES += src\main.cpp\
         src\visao\ConfiguracaoHubDialog.cpp \
         src\visao\ConfiguracaoHostDialog.cpp \
         src\visao\ConfiguracaoRoteadorDialog.cpp \
-        src\visao\ConfiguracaoSwitchDialog.cpp
+        src\visao\ConfiguracaoSwitchDialog.cpp \
+    src/controle/controleprincipal.cpp
 
 HEADERS  += src\visao\mainwindow.h\
         src\modelo\A.h\
@@ -51,7 +52,8 @@ HEADERS  += src\visao\mainwindow.h\
         src\visao\ConfiguracaoHubDialog.h \
         src\visao\ConfiguracaoHostDialog.h \
         src\visao\ConfiguracaoRoteadorDialog.h \
-        src\visao\ConfiguracaoSwitchDialog.h
+        src\visao\ConfiguracaoSwitchDialog.h \
+    src/controle/controleprincipal.h
 
 FORMS    += src\visao\mainwindow.ui \
     src\visao\ConfiguracaoHubDialog.ui \

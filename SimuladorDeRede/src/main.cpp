@@ -1,11 +1,9 @@
 #include <QtGui/QApplication>
-#include "mainwindow.h"
+#include "src/controle/controleprincipal.h"
 
 int main(int argc, char *argv[])
 {
     QApplication a(argc, argv);
-    MainWindow w;
-    w.show();
-    
+    ControlePrincipal c;
     return a.exec();
 }
