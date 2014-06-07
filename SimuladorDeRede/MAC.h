@@ -17,7 +17,7 @@ class MAC
 
 public:
 	MAC();
-    string getEnderco();
+    string getEndereco();
     void setEndereco(string endereco);
 private:
 	string endereco;

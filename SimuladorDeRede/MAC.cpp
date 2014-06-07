@@ -11,7 +11,7 @@ MAC::MAC(){
 
 }
 
-string MAC::getEnderco(){
+string MAC::getEndereco(){
     return this->endereco;
 }
 

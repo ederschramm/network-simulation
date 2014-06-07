@@ -13,7 +13,6 @@ Computador::Computador(){
 }
 
 void Computador::abrir(Datagrama *datagrama){
-
 }
 
 void Computador::abrir(Segmento *segmento){
@@ -22,4 +21,19 @@ void Computador::abrir(Segmento *segmento){
 
 void Computador::abrir(Dado *dado){
 
+}
+
+void Computador::abrir(Frame *frame, PortaRede *porta){
+    if (frame->getDestino() != "FF:FF:FF:FF:FF:FF"){
+        if (frame->getDestino()==porta->getMac()->getEndereco()){
+            Datagrama* datagrama = frame->getDado();
+            this->abrir(datagrama);
+        }
+    } else {
+        //Resposta ao broadcast
+        Frame* f = new Frame();
+        f->setDestino("0");
+        f->setOrigem(porta->getMac()->getEndereco());
+        porta->getCabo()->envia(f,porta);
+    }
 }

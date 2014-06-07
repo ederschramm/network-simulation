@@ -10,11 +10,18 @@
 
 #include "Equipamento.h"
 #include "NI.h"
+#include <map>
+#include <vector>
 
 class Switch : public Equipamento
 {
 
 public:
 	Switch();
+    void abrir(Frame *frame, PortaRede *porta);
+private:
+    map<string, PortaRede*> tabelaMAC;
+    void broadcast();
+    void atualizaTabela(string mac, PortaRede* porta);
 };
 #endif // !defined(EA_C54289FD_F71D_4c5f_A2CA_F35BFCFB0F41__INCLUDED_)
