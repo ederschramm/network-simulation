@@ -20,6 +20,10 @@ void Roteador::abrir(Frame *frame, PortaRede *porta){
 
     } else {
         //resposta ao broadcast
+        Frame* f = new Frame();
+        f->setDestino("0");
+        f->setOrigem(porta->getMac()->getEndereco());
+        porta->getCabo()->envia(f,porta);
     }
 }
 

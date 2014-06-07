@@ -10,54 +10,54 @@ TARGET = SimuladorDeRede
 TEMPLATE = app
 
 
-SOURCES += main.cpp\
-        mainwindow.cpp\
-        Cabo.cpp\
-        Computador.cpp\
-        Dado.cpp\
-        Datagrama.cpp\
-        Equipamento.cpp\
-        Frame.cpp\
-        Hub.cpp\
-        IP.cpp\
-        MAC.cpp\
-        PortaRede.cpp\
-        Roteador.cpp\
-        Segmento.cpp\
-        Switch.cpp \
-    ConfiguracaoHubDialog.cpp \
-    ConfiguracaoHostDialog.cpp \
-    ConfiguracaoRoteadorDialog.cpp \
-    ConfiguracaoSwitchDialog.cpp
+SOURCES += src\main.cpp\
+        src\visao\mainwindow.cpp\
+        src\modelo\Cabo.cpp\
+        src\modelo\Computador.cpp\
+        src\modelo\Dado.cpp\
+        src\modelo\Datagrama.cpp\
+        src\modelo\Equipamento.cpp\
+        src\modelo\Frame.cpp\
+        src\modelo\Hub.cpp\
+        src\modelo\IP.cpp\
+        src\modelo\MAC.cpp\
+        src\modelo\PortaRede.cpp\
+        src\modelo\Roteador.cpp\
+        src\modelo\Segmento.cpp\
+        src\modelo\Switch.cpp \
+        src\visao\ConfiguracaoHubDialog.cpp \
+        src\visao\ConfiguracaoHostDialog.cpp \
+        src\visao\ConfiguracaoRoteadorDialog.cpp \
+        src\visao\ConfiguracaoSwitchDialog.cpp
 
-HEADERS  += mainwindow.h\
-        A.h\
-        Cabo.h\
-        Computador.h\
-        Dado.h\
-        Datagrama.h\
-        Equipamento.h\
-        Frame.h\
-        Hub.h\
-        I.h\
-        IP.h\
-        MAC.h\
-        NI.h\
-        PortaRede.h\
-        Roteador.h\
-        Segmento.h\
-        Switch.h\
-        T.h \
-    ConfiguracaoHubDialog.h \
-    ConfiguracaoHostDialog.h \
-    ConfiguracaoRoteadorDialog.h \
-    ConfiguracaoSwitchDialog.h
+HEADERS  += src\visao\mainwindow.h\
+        src\modelo\A.h\
+        src\modelo\Cabo.h\
+        src\modelo\Computador.h\
+        src\modelo\Dado.h\
+        src\modelo\Datagrama.h\
+        src\modelo\Equipamento.h\
+        src\modelo\Frame.h\
+        src\modelo\Hub.h\
+        src\modelo\I.h\
+        src\modelo\IP.h\
+        src\modelo\MAC.h\
+        src\modelo\NI.h\
+        src\modelo\PortaRede.h\
+        src\modelo\Roteador.h\
+        src\modelo\Segmento.h\
+        src\modelo\Switch.h\
+        src\modelo\T.h \
+        src\visao\ConfiguracaoHubDialog.h \
+        src\visao\ConfiguracaoHostDialog.h \
+        src\visao\ConfiguracaoRoteadorDialog.h \
+        src\visao\ConfiguracaoSwitchDialog.h
 
-FORMS    += mainwindow.ui \
-    ConfiguracaoHubDialog.ui \
-    ConfiguracaoHostDialog.ui \
-    ConfiguracaoRoteadorDialog.ui \
-    ConfiguracaoSwitchDialog.ui
+FORMS    += src\visao\mainwindow.ui \
+    src\visao\ConfiguracaoHubDialog.ui \
+    src\visao\ConfiguracaoHostDialog.ui \
+    src\visao\ConfiguracaoRoteadorDialog.ui \
+    src\visao\ConfiguracaoSwitchDialog.ui
 
 RESOURCES += \
     Recursos.qrc
