@@ -1,5 +1,5 @@
 #include "controleprincipal.h"
-
+#include "src/controle/controleconfiguracaohost.h"
 ControlePrincipal::ControlePrincipal()
 {
     this->mainWindow = new MainWindow();
@@ -40,6 +40,8 @@ void ControlePrincipal::onClickButtonComputador (){
     QMessageBox message;
     message.setText("Computador");
     message.exec();
+    ConfiguracaoHostDialog* dialog = new ConfiguracaoHostDialog(this->mainWindow);
+    dialog->show();
 }
 
 void ControlePrincipal::onClickButtonRoteador(){
