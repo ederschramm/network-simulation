@@ -60,4 +60,5 @@ FORMS    += src\visao\mainwindow.ui \
     src\visao\ConfiguracaoSwitchDialog.ui
 
 RESOURCES += \
-    Recursos.qrc
+    src\visao\Recursos.qrc
+
