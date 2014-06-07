@@ -15,3 +15,11 @@ void Roteador::abrir(Datagrama *datagrama){
 
 }
 
+void Roteador::abrir(Frame *frame, PortaRede *porta){
+    if (frame->getDestino() != "FF:FF:FF:FF:FF"){
+
+    } else {
+        //resposta ao broadcast
+    }
+}
+

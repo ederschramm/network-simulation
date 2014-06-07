@@ -22,6 +22,7 @@ public:
     virtual void abrir(Datagrama* datagrama);
     virtual void abrir(Segmento* segmento);
     virtual void abrir(Dado* dado);
+    void abrir(Frame* frame, PortaRede* porta);
 
 };
 #endif // !defined(EA_2AE89DAE_7BE2_4716_AE13_F6BC1C380877__INCLUDED_)

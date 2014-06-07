@@ -18,5 +18,6 @@ class Roteador : public Equipamento, public I
 public:
 	Roteador();
     virtual void abrir(Datagrama* datagrama);
+    void abrir(Frame* frame, PortaRede* porta);
 };
 #endif // !defined(EA_84ABF8E1_B853_4e4e_BF5A_2920A1C1DE18__INCLUDED_)

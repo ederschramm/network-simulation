@@ -11,10 +11,12 @@ Hub::Hub(){
 
 }
 
-void Hub::abrir(Frame *frame){
+void Hub::abrir(Frame *frame, PortaRede *porta){
     for (vector<PortaRede*>::iterator it = this->portas.begin(); it != this->portas.end(); it++){
-        PortaRede* porta = *it;
-        porta->getCabo()->envia(frame, porta);
+        PortaRede* p = *it;
+        if (porta != p){
+            p->getCabo()->envia(frame, porta);
+        }
     }
 }
 

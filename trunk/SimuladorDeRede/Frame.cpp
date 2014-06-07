@@ -23,6 +23,10 @@ string Frame::getOrigem(){
     return this->origem;
 }
 
+void Frame::setOrigem(string origem){
+    this->origem = origem;
+}
+
 Datagrama* Frame::getDado(){
     return this->dado;
 }

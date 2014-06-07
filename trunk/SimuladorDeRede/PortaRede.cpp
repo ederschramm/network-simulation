@@ -12,7 +12,7 @@ PortaRede::PortaRede(){
 }
 
 void PortaRede::abre(Frame *frame){
-    this->equipamento->abrir(frame);
+    this->equipamento->abrir(frame,this);
 }
 
 Equipamento* PortaRede::getEquipamento(){
