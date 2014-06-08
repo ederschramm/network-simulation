@@ -38,19 +38,3 @@ Cabo* PortaRede::getCabo(){
 void PortaRede::setCabo(Cabo *cabo){
     this->cabo = cabo;
 }
-
-IP* PortaRede::getIp(){
-    return this->ip;
-}
-
-void PortaRede::setIp(IP *ip){
-    this->ip = ip;
-}
-
-MAC* PortaRede::getMac(){
-    return this->mac;
-}
-
-void PortaRede::setMac(MAC *mac){
-    this->mac = mac;
-}

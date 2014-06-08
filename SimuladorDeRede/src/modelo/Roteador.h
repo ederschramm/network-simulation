@@ -11,6 +11,7 @@
 #include "Equipamento.h"
 #include "I.h"
 #include "NI.h"
+#include "portaredeip.h"
 
 class Roteador : public Equipamento, public I
 {

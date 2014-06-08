@@ -16,14 +16,15 @@ void Roteador::abrir(Datagrama *datagrama){
 }
 
 void Roteador::abrir(Frame *frame, PortaRede *porta){
+    PortaRedeIP *portaIP = (PortaRedeIP*)porta;
     if (frame->getDestino() != "FF:FF:FF:FF:FF"){
 
     } else {
         //resposta ao broadcast
         Frame* f = new Frame();
         f->setDestino("0");
-        f->setOrigem(porta->getMac()->getEndereco());
-        porta->getCabo()->envia(f,porta);
+        f->setOrigem(portaIP->getMac());
+        porta->getCabo()->envia(f,portaIP);
     }
 }
 

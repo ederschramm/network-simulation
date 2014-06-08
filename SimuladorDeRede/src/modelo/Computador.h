@@ -13,6 +13,7 @@
 #include "T.h"
 #include "A.h"
 #include "NI.h"
+#include "portaredeip.h"
 
 class Computador : public Equipamento, public I, public T, public A
 {

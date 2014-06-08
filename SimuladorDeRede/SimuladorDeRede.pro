@@ -19,8 +19,6 @@ SOURCES += src\main.cpp\
         src\modelo\Equipamento.cpp\
         src\modelo\Frame.cpp\
         src\modelo\Hub.cpp\
-        src\modelo\IP.cpp\
-        src\modelo\MAC.cpp\
         src\modelo\PortaRede.cpp\
         src\modelo\Roteador.cpp\
         src\modelo\Segmento.cpp\
@@ -33,7 +31,8 @@ SOURCES += src\main.cpp\
     src/controle/controleconfiguracaohost.cpp \
     src/controle/controleconfiguracaohub.cpp \
     src/controle/controleconfiguracaoroteador.cpp \
-    src/controle/controleconfiguracaoswitch.cpp
+    src/controle/controleconfiguracaoswitch.cpp \
+    src/modelo/portaredeip.cpp
 
 HEADERS  += src\visao\mainwindow.h\
         src\modelo\A.h\
@@ -45,8 +44,6 @@ HEADERS  += src\visao\mainwindow.h\
         src\modelo\Frame.h\
         src\modelo\Hub.h\
         src\modelo\I.h\
-        src\modelo\IP.h\
-        src\modelo\MAC.h\
         src\modelo\NI.h\
         src\modelo\PortaRede.h\
         src\modelo\Roteador.h\
@@ -61,7 +58,8 @@ HEADERS  += src\visao\mainwindow.h\
     src/controle/controleconfiguracaohost.h \
     src/controle/controleconfiguracaohub.h \
     src/controle/controleconfiguracaoroteador.h \
-    src/controle/controleconfiguracaoswitch.h
+    src/controle/controleconfiguracaoswitch.h \
+    src/modelo/portaredeip.h
 
 FORMS    += src\visao\mainwindow.ui \
     src\visao\ConfiguracaoHubDialog.ui \
