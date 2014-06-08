@@ -1,13 +1,19 @@
 #include "controleprincipal.h"
 #include "src/controle/controleconfiguracaohost.h"
+#include "src/controle/controleconfiguracaohub.h"
+#include "src/controle/controleconfiguracaoroteador.h"
+#include "src/controle/controleconfiguracaoswitch.h"
+#include <QDebug>
 ControlePrincipal::ControlePrincipal()
 {
+    qDebug() << "ControlePrincipal::ControlePrincipal()";
     this->mainWindow = new MainWindow();
     this->mainWindow->show();
     this->listeners();
 }
 
 void ControlePrincipal::listeners(){
+    qDebug()<<"ControlePrincipal::listeners()";
     QPushButton *btComputador;
     QPushButton *btSwitch;
     QPushButton *btHub;
@@ -31,39 +37,33 @@ void ControlePrincipal::listeners(){
 }
 
 void ControlePrincipal::onClickButtonHub(){
-    QMessageBox message;
-    message.setText("Hub");
-    message.exec();
+    qDebug()<<"ControlePrincipal::onClickButtonHub()";
+    ControleConfiguracaoHub *controleHub = new ControleConfiguracaoHub(this->mainWindow);
+    controleHub->show();
 }
 
-void ControlePrincipal::onClickButtonComputador (){
-    QMessageBox message;
-    message.setText("Computador");
-    message.exec();
-    ConfiguracaoHostDialog* dialog = new ConfiguracaoHostDialog(this->mainWindow);
-    dialog->show();
+void ControlePrincipal::onClickButtonComputador(){
+    qDebug()<<"ControlePrincipal::onClickButtonComputador()";
+    ControleConfiguracaoHost *controleDialog = new ControleConfiguracaoHost(this->mainWindow);
+    controleDialog->show();
 }
 
 void ControlePrincipal::onClickButtonRoteador(){
-    QMessageBox message;
-    message.setText("Roteador");
-    message.exec();
+    qDebug()<<"ControlePrincipal::onClickButtonRoteador()";
+    ControleConfiguracaoRoteador *controleRoteador = new ControleConfiguracaoRoteador(this->mainWindow);
+    controleRoteador->show();
 }
 
 void ControlePrincipal::onClickButtonSwitch(){
-    QMessageBox message;
-    message.setText("Switch");
-    message.exec();
+    qDebug()<<"ControlePrincipal::onClickButtonSwitch()";
+    ControleConfiguracaoSwitch *controleSwitch = new ControleConfiguracaoSwitch(this->mainWindow);
+    controleSwitch->show();
 }
 
 void ControlePrincipal::onClickButtonCaboCross(){
-    QMessageBox message;
-    message.setText("Cabo cross");
-    message.exec();
+    qDebug()<<"ControlePrincipal::onClickButtonCaboCross()";
 }
 
 void ControlePrincipal::onClickButtonCaboStraight(){
-    QMessageBox message;
-    message.setText("Cabo Straight");
-    message.exec();
+    qDebug()<<"ControlePrincipal::onClickButtonCaboStraight()";
 }

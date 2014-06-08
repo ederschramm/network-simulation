@@ -4,6 +4,8 @@
 #include "src/visao/mainwindow.h"
 #include "src/visao/ConfiguracaoSwitchDialog.h"
 #include <QObject>
+#include <QPushButton>
+#include <QGroupBox>
 
 class ControleConfiguracaoSwitch : public QObject
 {

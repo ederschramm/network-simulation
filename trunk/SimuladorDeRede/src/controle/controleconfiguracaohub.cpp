@@ -1,28 +1,44 @@
 #include "controleconfiguracaohub.h"
+#include "QDebug"
 
 ControleConfiguracaoHub::ControleConfiguracaoHub(MainWindow *mainWindow)
 {
+    qDebug()<<"ControleConfiguracaoHub::ControleConfiguracaoHub(MainWindow *mainWindow)";
     this->mainWindow = mainWindow;
-    this->dialog = new ConfiguracaoHubDialog(this->mainWindow);
+    this->dialog = new ConfiguracaoHubDialog(this->mainWindow->centralWidget());
     this->listeners();
 }
 
 void ControleConfiguracaoHub::show(){
-    this->dialog->show();
+    qDebug()<<"ControleConfiguracaoHub::show()";
+    this->dialog->exec();
 }
 
 void ControleConfiguracaoHub::listeners(){
+    qDebug()<<"ControleConfiguracaoHub::listeners()";
+    QGroupBox *gbInterfaceRede;
+    QPushButton *btNovo;
+    QPushButton *btGravar;
+    QPushButton *btExcluir;
 
+    gbInterfaceRede = this->dialog->findChild<QGroupBox*>("gbInterfaceRede");
+    btNovo = gbInterfaceRede->findChild<QPushButton*>("btNovo");
+    btGravar = gbInterfaceRede->findChild<QPushButton*>("btGravar");
+    btExcluir = gbInterfaceRede->findChild<QPushButton*>("btExcluir");
+
+    connect(btNovo,SIGNAL(clicked()),this,SLOT(onClickButtonNovo()));
+    connect(btGravar,SIGNAL(clicked()),this,SLOT(onClickButtonGravar()));
+    connect(btExcluir,SIGNAL(clicked()),this,SLOT(onClickButtonExcluir()));
 }
 
 void ControleConfiguracaoHub::onClickButtonExcluir(){
-    //Evento do click do botão excluir
+    qDebug()<<"ControleConfiguracaoHub::onClickButtonExcluir()";
 }
 
 void ControleConfiguracaoHub::onClickButtonGravar(){
-    //Evento do click do botão gravar
+    qDebug()<<"ControleConfiguracaoHub::onClickButtonGravar()";
 }
 
 void ControleConfiguracaoHub::onClickButtonNovo(){
-    //Evento do click do botão novo
+    qDebug()<<"ControleConfiguracaoHub::onClickButtonNovo()";
 }

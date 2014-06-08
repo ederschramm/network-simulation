@@ -4,7 +4,7 @@
 #
 #-------------------------------------------------
 
-QT       += core gui debug
+QT       += core gui
 
 TARGET = SimuladorDeRede
 TEMPLATE = app

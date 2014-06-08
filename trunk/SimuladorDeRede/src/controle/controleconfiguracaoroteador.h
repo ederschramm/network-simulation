@@ -4,6 +4,8 @@
 #include "src/visao/ConfiguracaoRoteadorDialog.h"
 #include "src/visao/mainwindow.h"
 #include <QObject>
+#include <QPushButton>
+#include <QGroupBox>
 
 class ControleConfiguracaoRoteador : public QObject
 {
