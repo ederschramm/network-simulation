@@ -8,44 +8,21 @@ ControleConfiguracaoHost::ControleConfiguracaoHost(MainWindow *mainWindow)
 }
 
 void ControleConfiguracaoHost::show(){
-    this->dialog->exec();
+    this->dialog->show();
 }
 
 void ControleConfiguracaoHost::listeners(){
-    QTabWidget *tabWidget;
-    QWidget *tabFisico;
-    QWidget *tabLogico;
-    QWidget *tabPrompt;
-    QPushButton *btNovo;
-    QPushButton *btGravarFisico;
-    QPushButton *btExcluir;
-
-    tabWidget = this->dialog->findChild<QTabWidget*>("tabWidget");
-    tabFisico = tabWidget->findChild<QWidget*>("tabFisico");
-    tabLogico = tabWidget->findChild<QWidget*>("tabLogico");
-    tabPrompt = tabWidget->findChild<QWidget*>("tabPrompt");
-
-    btNovo = tabFisico->findChild<QPushButton*>("btNovo");
-    btGravarFisico = tabFisico->findChild<QPushButton*>("btGravarFisico");
-    btExcluir = tabFisico->findChild<QPushButton*>("btExcluir");
-
-    connect(btNovo, SIGNAL(clicked()), this,SLOT(onClickButtonNovo()));
-    connect(btGravarFisico, SIGNAL(clicked()), this,SLOT(onClickButtonGravarFisico()));
-    connect(btExcluir,SIGNAL(clicked()),this,SLOT(onClickButtonExcluir()));
+    //Conectar os componentes aos ouvintes
 }
 
 void ControleConfiguracaoHost::onClickButtonExcluir(){
-    QMessageBox message;
-    message.setText("Excluir");
-    message.exec();
+    //Evento do click do botão excluir
 }
 
 void ControleConfiguracaoHost::onClickButtonGravarFisico(){
-    QMessageBox message;
-    message.setText("Gravar Físico");
-    message.exec();
+    //Evento do click do botão gravar fisico
 }
 
 void ControleConfiguracaoHost::onClickButtonNovo(){
-    qDebug("Novo");
+    //Evento do click do botão novo
 }
