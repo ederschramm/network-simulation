@@ -4,8 +4,8 @@
         <file>imagens/iRouter.png</file>
         <file>imagens/iSwitch.png</file>
         <file>imagens/iWorkstation.png</file>
-        <file>imagens/cross.jpg</file>
-        <file>imagens/straight.jpg</file>
         <file>imagens/iMultiDevices.png</file>
+        <file>imagens/cross.png</file>
+        <file>imagens/straight.png</file>
     </qresource>
 </RCC>
