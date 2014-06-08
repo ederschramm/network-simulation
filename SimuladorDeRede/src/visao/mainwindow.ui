@@ -124,7 +124,7 @@
     </property>
     <property name="icon">
      <iconset resource="Recursos.qrc">
-      <normaloff>:/new/imagens/imagens/straight.jpg</normaloff>:/new/imagens/imagens/straight.jpg</iconset>
+      <normaloff>:/new/imagens/imagens/straight.png</normaloff>:/new/imagens/imagens/straight.png</iconset>
     </property>
     <property name="iconSize">
      <size>
@@ -147,7 +147,7 @@
     </property>
     <property name="icon">
      <iconset resource="Recursos.qrc">
-      <normaloff>:/new/imagens/imagens/cross.jpg</normaloff>:/new/imagens/imagens/cross.jpg</iconset>
+      <normaloff>:/new/imagens/imagens/cross.png</normaloff>:/new/imagens/imagens/cross.png</iconset>
     </property>
     <property name="iconSize">
      <size>
