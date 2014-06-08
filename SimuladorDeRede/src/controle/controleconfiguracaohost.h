@@ -23,6 +23,7 @@ private slots:
     void onClickButtonNovo();
     void onClickButtonGravarFisico();
     void onClickButtonExcluir();
+    void onClickButtonGravarLogico();
 };
 
 #endif // CONTROLECONFIGURACAOHOST_H

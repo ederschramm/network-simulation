@@ -4,6 +4,8 @@
 #include "src/visao/mainwindow.h"
 #include "src/visao/ConfiguracaoHubDialog.h"
 #include <QObject>
+#include <QGroupBox>
+#include <QPushButton>
 
 class ControleConfiguracaoHub : public QObject
 {
