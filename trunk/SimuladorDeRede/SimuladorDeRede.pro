@@ -22,17 +22,17 @@ SOURCES += src\main.cpp\
         src\modelo\PortaRede.cpp\
         src\modelo\Roteador.cpp\
         src\modelo\Segmento.cpp\
-        src\modelo\Switch.cpp \
-        src\visao\ConfiguracaoHubDialog.cpp \
-        src\visao\ConfiguracaoHostDialog.cpp \
-        src\visao\ConfiguracaoRoteadorDialog.cpp \
-        src\visao\ConfiguracaoSwitchDialog.cpp \
-    src/controle/controleprincipal.cpp \
-    src/controle/controleconfiguracaohost.cpp \
-    src/controle/controleconfiguracaohub.cpp \
-    src/controle/controleconfiguracaoroteador.cpp \
-    src/controle/controleconfiguracaoswitch.cpp \
-    src/modelo/portaredeip.cpp
+        src\modelo\Switch.cpp\
+        src\visao\ConfiguracaoHubDialog.cpp\
+        src\visao\ConfiguracaoHostDialog.cpp\
+        src\visao\ConfiguracaoRoteadorDialog.cpp\
+        src\visao\ConfiguracaoSwitchDialog.cpp\
+        src\controle\controleprincipal.cpp\
+        src\controle\controleconfiguracaohost.cpp\
+        src\controle\controleconfiguracaohub.cpp\
+        src\controle\controleconfiguracaoroteador.cpp\
+        src\controle\controleconfiguracaoswitch.cpp\
+        src\modelo\portaredeip.cpp
 
 HEADERS  += src\visao\mainwindow.h\
         src\modelo\A.h\
@@ -49,24 +49,24 @@ HEADERS  += src\visao\mainwindow.h\
         src\modelo\Roteador.h\
         src\modelo\Segmento.h\
         src\modelo\Switch.h\
-        src\modelo\T.h \
-        src\visao\ConfiguracaoHubDialog.h \
-        src\visao\ConfiguracaoHostDialog.h \
-        src\visao\ConfiguracaoRoteadorDialog.h \
-        src\visao\ConfiguracaoSwitchDialog.h \
-    src/controle/controleprincipal.h \
-    src/controle/controleconfiguracaohost.h \
-    src/controle/controleconfiguracaohub.h \
-    src/controle/controleconfiguracaoroteador.h \
-    src/controle/controleconfiguracaoswitch.h \
-    src/modelo/portaredeip.h
+        src\modelo\T.h\
+        src\visao\ConfiguracaoHubDialog.h\
+        src\visao\ConfiguracaoHostDialog.h\
+        src\visao\ConfiguracaoRoteadorDialog.h\
+        src\visao\ConfiguracaoSwitchDialog.h\
+        src\controle\controleprincipal.h\
+        src\controle\controleconfiguracaohost.h\
+        src\controle\controleconfiguracaohub.h\
+        src\controle\controleconfiguracaoroteador.h\
+        src\controle\controleconfiguracaoswitch.h\
+        src\modelo\portaredeip.h
 
-FORMS    += src\visao\mainwindow.ui \
-    src\visao\ConfiguracaoHubDialog.ui \
-    src\visao\ConfiguracaoHostDialog.ui \
-    src\visao\ConfiguracaoRoteadorDialog.ui \
-    src\visao\ConfiguracaoSwitchDialog.ui
+FORMS    += src\visao\mainwindow.ui\
+        src\visao\ConfiguracaoHubDialog.ui\
+        src\visao\ConfiguracaoHostDialog.ui\
+        src\visao\ConfiguracaoRoteadorDialog.ui\
+        src\visao\ConfiguracaoSwitchDialog.ui
 
 RESOURCES += \
-    src\visao\Recursos.qrc
+        src\visao\Recursos.qrc
 
