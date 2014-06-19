@@ -1,24 +1,24 @@
-///////////////////////////////////////////////////////////
-//  Roteador.h
-//  Implementation of the Class Roteador
-//  Created on:      03-Jun-2014 10:16:55 AM
-//  Original author: Diego Heusser
-///////////////////////////////////////////////////////////
+#ifndef ROTEADOR_H
+#define ROTEADOR_H
 
-#if !defined(EA_84ABF8E1_B853_4e4e_BF5A_2920A1C1DE18__INCLUDED_)
-#define EA_84ABF8E1_B853_4e4e_BF5A_2920A1C1DE18__INCLUDED_
+#include "equipamento.h"
 
-#include "Equipamento.h"
-#include "I.h"
-#include "NI.h"
-#include "portaredeip.h"
+#include <string>
+#include <map>
 
-class Roteador : public Equipamento, public I
+class Roteador : public Equipamento
 {
-
 public:
-	Roteador();
-    virtual void abrir(Datagrama* datagrama);
-    void abrir(Frame* frame, PortaRede* porta);
+    Roteador();
+    void addIP(int interfaceRede, string ip);
+    void addMAC(int interfaceRede, string mac);
+    void delIP(int interfaceRede);
+    void delMAC(int interfaceRede);
+    string findIP(int interfaceRede);
+    string findMAC(int interfaceRede);
+private:
+    map<int, string> ip;
+    map<int, string> mac;
 };
-#endif // !defined(EA_84ABF8E1_B853_4e4e_BF5A_2920A1C1DE18__INCLUDED_)
+
+#endif // ROTEADOR_H

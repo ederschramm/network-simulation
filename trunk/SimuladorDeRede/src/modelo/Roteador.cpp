@@ -1,30 +1,39 @@
-///////////////////////////////////////////////////////////
-//  Roteador.cpp
-//  Implementation of the Class Roteador
-//  Created on:      03-Jun-2014 10:16:55 AM
-//  Original author: Diego Heusser
-///////////////////////////////////////////////////////////
+#include "roteador.h"
 
-#include "Roteador.h"
-
-Roteador::Roteador(){
-
+Roteador::Roteador(): Equipamento()
+{
 }
 
-void Roteador::abrir(Datagrama *datagrama){
-
+void Roteador::addIP(int interfaceRede, string ip){
+    this->ip[interfaceRede] = ip;
 }
 
-void Roteador::abrir(Frame *frame, PortaRede *porta){
-    PortaRedeIP *portaIP = (PortaRedeIP*)porta;
-    if (frame->getDestino() != "FF:FF:FF:FF:FF"){
+void Roteador::addMAC(int interfaceRede, string mac){
+    this->mac[interfaceRede] = mac;
+}
 
+void Roteador::delIP(int interfaceRede){
+    this->ip.erase(interfaceRede);
+}
+
+void Roteador::delMAC(int interfaceRede){
+    this->mac.erase(interfaceRede);
+}
+
+string Roteador::findIP(int interfaceRede){
+    map<int, string>::iterator i = this->ip.find(interfaceRede);
+    if (i != this->ip.end()){
+        return i->second;
     } else {
-        //resposta ao broadcast
-        Frame* f = new Frame();
-        f->setDestino("0");
-        f->setOrigem(portaIP->getMac());
-        porta->getCabo()->envia(f,portaIP);
+        return "";
     }
 }
 
+string Roteador::findMAC(int interfaceRede){
+    map<int, string>::iterator i = this->mac.find(interfaceRede);
+    if (i != this->mac.end()){
+        return i->second;
+    } else {
+        return "";
+    }
+}

@@ -1,40 +1,39 @@
-///////////////////////////////////////////////////////////
-//  Computador.cpp
-//  Implementation of the Class Computador
-//  Created on:      03-Jun-2014 10:16:49 AM
-//  Original author: Diego Heusser
-///////////////////////////////////////////////////////////
+#include "computador.h"
 
-#include "Computador.h"
-
-
-Computador::Computador(){
-
+Computador::Computador():Equipamento()
+{
 }
 
-void Computador::abrir(Datagrama *datagrama){
+void Computador::addIP(int interfaceRede, string ip){
+    this->ip[interfaceRede] = ip;
 }
 
-void Computador::abrir(Segmento *segmento){
-
+void Computador::addMAC(int interfaceRede, string mac){
+    this->mac[interfaceRede] = mac;
 }
 
-void Computador::abrir(Dado *dado){
-
+void Computador::delIP(int interfaceRede){
+    this->ip.erase(interfaceRede);
 }
 
-void Computador::abrir(Frame *frame, PortaRede *porta){
-    PortaRedeIP *portaIP = (PortaRedeIP*)porta;
-    if (frame->getDestino() != "FF:FF:FF:FF:FF:FF"){
-        if (frame->getDestino()==portaIP->getMac()){
-            Datagrama* datagrama = frame->getDado();
-            this->abrir(datagrama);
-        }
+void Computador::delMAC(int interfaceRede){
+    this->mac.erase(interfaceRede);
+}
+
+string Computador::findIP(int interfaceRede){
+     map<int, string>::iterator i = this->ip.find(interfaceRede);
+     if ( i != this->ip.end()){
+         return i->second;
+     } else {
+         return "";
+     }
+}
+
+string Computador::findMAC(int interfaceRede){
+    map<int, string>::iterator i = this->mac.find(interfaceRede);
+    if ( i != this->mac.end()){
+        return i->second;
     } else {
-        //Resposta ao broadcast
-        Frame* f = new Frame();
-        f->setDestino("0");
-        f->setOrigem(portaIP->getMac());
-        porta->getCabo()->envia(f,portaIP);
+        return "";
     }
 }

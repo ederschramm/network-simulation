@@ -1,29 +1,26 @@
-///////////////////////////////////////////////////////////
-//  Computador.h
-//  Implementation of the Class Computador
-//  Created on:      03-Jun-2014 10:16:48 AM
-//  Original author: Diego Heusser
-///////////////////////////////////////////////////////////
+#ifndef COMPUTADOR_H
+#define COMPUTADOR_H
 
-#if !defined(EA_2AE89DAE_7BE2_4716_AE13_F6BC1C380877__INCLUDED_)
-#define EA_2AE89DAE_7BE2_4716_AE13_F6BC1C380877__INCLUDED_
+#include "equipamento.h"
 
-#include "Equipamento.h"
-#include "I.h"
-#include "T.h"
-#include "A.h"
-#include "NI.h"
-#include "portaredeip.h"
+#include <Map>
+#include <string>
 
-class Computador : public Equipamento, public I, public T, public A
+using namespace std;
+
+class Computador : public Equipamento
 {
-
 public:
-	Computador();
-    virtual void abrir(Datagrama* datagrama);
-    virtual void abrir(Segmento* segmento);
-    virtual void abrir(Dado* dado);
-    void abrir(Frame* frame, PortaRede* porta);
-
+    Computador();
+    void addIP(int interfaceRede, string ip);
+    void addMAC(int interfaceRede, string mac);
+    void delIP(int interfaceRede);
+    void delMAC(int interfaceRede);
+    string findIP(int interfaceRede);
+    string findMAC(int interfaceRede);
+private:
+    map<int, string> ip;
+    map<int, string> mac;
 };
-#endif // !defined(EA_2AE89DAE_7BE2_4716_AE13_F6BC1C380877__INCLUDED_)
+
+#endif // COMPUTADOR_H
