@@ -10,6 +10,7 @@ ControlePrincipal::ControlePrincipal()
     this->mainWindow = new MainWindow();
     this->mainWindow->show();
     this->listeners();
+
 }
 
 void ControlePrincipal::listeners(){
@@ -30,8 +31,6 @@ void ControlePrincipal::onClickButtonHub(){
 
 void ControlePrincipal::onClickButtonComputador(){
     qDebug()<<"ControlePrincipal::onClickButtonComputador()";
-    //ControleConfiguracaoHost *controleDialog = new ControleConfiguracaoHost(this->mainWindow);
-    //controleDialog->show();
 
 }
 
