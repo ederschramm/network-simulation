@@ -156,29 +156,14 @@
      </size>
     </property>
    </widget>
-   <widget class="QMdiArea" name="mdiArea">
+   <widget class="QWidget" name="widgetDiagrama" native="true">
     <property name="geometry">
      <rect>
       <x>100</x>
       <y>10</y>
-      <width>531</width>
-      <height>411</height>
+      <width>541</width>
+      <height>401</height>
      </rect>
-    </property>
-    <property name="mouseTracking">
-     <bool>false</bool>
-    </property>
-    <property name="autoFillBackground">
-     <bool>false</bool>
-    </property>
-    <property name="background">
-     <brush brushstyle="SolidPattern">
-      <color alpha="255">
-       <red>255</red>
-       <green>255</green>
-       <blue>255</blue>
-      </color>
-     </brush>
     </property>
    </widget>
   </widget>
