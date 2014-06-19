@@ -14,26 +14,12 @@ ControlePrincipal::ControlePrincipal()
 
 void ControlePrincipal::listeners(){
     qDebug()<<"ControlePrincipal::listeners()";
-    QPushButton *btComputador;
-    QPushButton *btSwitch;
-    QPushButton *btHub;
-    QPushButton *btRoteador;
-    QPushButton *btCaboStraight;
-    QPushButton *btCaboCross;
-
-    btComputador = this->mainWindow->centralWidget()->findChild<QPushButton*>("btComputador");
-    btSwitch = this->mainWindow->centralWidget()->findChild<QPushButton*>("btSwitch");
-    btHub = this->mainWindow->centralWidget()->findChild<QPushButton*>("btHub");
-    btRoteador = this->mainWindow->centralWidget()->findChild<QPushButton*>("btRoteador");
-    btCaboStraight = this->mainWindow->centralWidget()->findChild<QPushButton*>("btCaboStraight");
-    btCaboCross = this->mainWindow->centralWidget()->findChild<QPushButton*>("btCaboCross");
-
-    connect(btComputador,SIGNAL(clicked()), this, SLOT(onClickButtonComputador()));
-    connect(btSwitch, SIGNAL(clicked()), this, SLOT(onClickButtonSwitch()));
-    connect(btHub, SIGNAL(clicked()), this, SLOT(onClickButtonHub()));
-    connect(btRoteador, SIGNAL(clicked()), this, SLOT(onClickButtonRoteador()));
-    connect(btCaboStraight, SIGNAL(clicked()), this,SLOT(onClickButtonCaboStraight()));
-    connect(btCaboCross, SIGNAL(clicked()), this, SLOT(onClickButtonCaboCross()));
+    connect(this->mainWindow->btComputador,SIGNAL(clicked()), this, SLOT(onClickButtonComputador()));
+    connect(this->mainWindow->btSwitch, SIGNAL(clicked()), this, SLOT(onClickButtonSwitch()));
+    connect(this->mainWindow->btHub, SIGNAL(clicked()), this, SLOT(onClickButtonHub()));
+    connect(this->mainWindow->btRoteador, SIGNAL(clicked()), this, SLOT(onClickButtonRoteador()));
+    connect(this->mainWindow->btCaboStraight, SIGNAL(clicked()), this,SLOT(onClickButtonCaboStraight()));
+    connect(this->mainWindow->btCaboCross, SIGNAL(clicked()), this, SLOT(onClickButtonCaboCross()));
 }
 
 void ControlePrincipal::onClickButtonHub(){
@@ -44,8 +30,9 @@ void ControlePrincipal::onClickButtonHub(){
 
 void ControlePrincipal::onClickButtonComputador(){
     qDebug()<<"ControlePrincipal::onClickButtonComputador()";
-    ControleConfiguracaoHost *controleDialog = new ControleConfiguracaoHost(this->mainWindow);
-    controleDialog->show();
+    //ControleConfiguracaoHost *controleDialog = new ControleConfiguracaoHost(this->mainWindow);
+    //controleDialog->show();
+
 }
 
 void ControlePrincipal::onClickButtonRoteador(){
