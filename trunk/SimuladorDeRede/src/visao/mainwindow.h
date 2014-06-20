@@ -3,6 +3,8 @@
 
 #include <QMainWindow>
 #include <QPushButton>
+#include <QWidget>
+#include <QGraphicsView>
 
 namespace Ui {
 class MainWindow;
@@ -21,6 +23,7 @@ public:
     QPushButton *btRoteador;
     QPushButton *btCaboStraight;
     QPushButton *btCaboCross;
+    QGraphicsView *diagrama;
 private:
     Ui::MainWindow *ui;
 };

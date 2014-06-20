@@ -18,153 +18,183 @@
     <normaloff>:/new/imagens/imagens/iMultiDevices.png</normaloff>:/new/imagens/imagens/iMultiDevices.png</iconset>
   </property>
   <widget class="QWidget" name="centralWidget">
-   <widget class="QPushButton" name="btComputador">
+   <widget class="QWidget" name="">
     <property name="geometry">
      <rect>
       <x>10</x>
       <y>10</y>
-      <width>81</width>
-      <height>61</height>
-     </rect>
-    </property>
-    <property name="text">
-     <string/>
-    </property>
-    <property name="icon">
-     <iconset resource="Recursos.qrc">
-      <normaloff>:/new/imagens/imagens/iWorkstation.png</normaloff>:/new/imagens/imagens/iWorkstation.png</iconset>
-    </property>
-    <property name="iconSize">
-     <size>
-      <width>45</width>
-      <height>45</height>
-     </size>
-    </property>
-   </widget>
-   <widget class="QPushButton" name="btSwitch">
-    <property name="geometry">
-     <rect>
-      <x>10</x>
-      <y>80</y>
-      <width>81</width>
-      <height>60</height>
-     </rect>
-    </property>
-    <property name="text">
-     <string/>
-    </property>
-    <property name="icon">
-     <iconset resource="Recursos.qrc">
-      <normaloff>:/new/imagens/imagens/iSwitch.png</normaloff>:/new/imagens/imagens/iSwitch.png</iconset>
-    </property>
-    <property name="iconSize">
-     <size>
-      <width>45</width>
-      <height>45</height>
-     </size>
-    </property>
-   </widget>
-   <widget class="QPushButton" name="btHub">
-    <property name="geometry">
-     <rect>
-      <x>10</x>
-      <y>150</y>
-      <width>81</width>
-      <height>61</height>
-     </rect>
-    </property>
-    <property name="text">
-     <string/>
-    </property>
-    <property name="icon">
-     <iconset resource="Recursos.qrc">
-      <normaloff>:/new/imagens/imagens/iHub.png</normaloff>:/new/imagens/imagens/iHub.png</iconset>
-    </property>
-    <property name="iconSize">
-     <size>
-      <width>45</width>
-      <height>45</height>
-     </size>
-    </property>
-   </widget>
-   <widget class="QPushButton" name="btRoteador">
-    <property name="geometry">
-     <rect>
-      <x>10</x>
-      <y>220</y>
-      <width>81</width>
-      <height>61</height>
-     </rect>
-    </property>
-    <property name="text">
-     <string/>
-    </property>
-    <property name="icon">
-     <iconset resource="Recursos.qrc">
-      <normaloff>:/new/imagens/imagens/iRouter.png</normaloff>:/new/imagens/imagens/iRouter.png</iconset>
-    </property>
-    <property name="iconSize">
-     <size>
-      <width>45</width>
-      <height>45</height>
-     </size>
-    </property>
-   </widget>
-   <widget class="QPushButton" name="btCaboStraight">
-    <property name="geometry">
-     <rect>
-      <x>10</x>
-      <y>290</y>
-      <width>81</width>
-      <height>61</height>
-     </rect>
-    </property>
-    <property name="text">
-     <string/>
-    </property>
-    <property name="icon">
-     <iconset resource="Recursos.qrc">
-      <normaloff>:/new/imagens/imagens/straight.png</normaloff>:/new/imagens/imagens/straight.png</iconset>
-    </property>
-    <property name="iconSize">
-     <size>
-      <width>45</width>
-      <height>45</height>
-     </size>
-    </property>
-   </widget>
-   <widget class="QPushButton" name="btCaboCross">
-    <property name="geometry">
-     <rect>
-      <x>10</x>
-      <y>360</y>
-      <width>81</width>
-      <height>61</height>
-     </rect>
-    </property>
-    <property name="text">
-     <string/>
-    </property>
-    <property name="icon">
-     <iconset resource="Recursos.qrc">
-      <normaloff>:/new/imagens/imagens/cross.png</normaloff>:/new/imagens/imagens/cross.png</iconset>
-    </property>
-    <property name="iconSize">
-     <size>
-      <width>45</width>
-      <height>45</height>
-     </size>
-    </property>
-   </widget>
-   <widget class="QMdiArea" name="mdiArea">
-    <property name="geometry">
-     <rect>
-      <x>100</x>
-      <y>10</y>
-      <width>531</width>
+      <width>621</width>
       <height>411</height>
      </rect>
     </property>
+    <layout class="QHBoxLayout" name="horizontalLayout">
+     <property name="sizeConstraint">
+      <enum>QLayout::SetMaximumSize</enum>
+     </property>
+     <item>
+      <layout class="QVBoxLayout" name="verticalLayout">
+       <item>
+        <widget class="QPushButton" name="btComputador">
+         <property name="maximumSize">
+          <size>
+           <width>57</width>
+           <height>53</height>
+          </size>
+         </property>
+         <property name="acceptDrops">
+          <bool>true</bool>
+         </property>
+         <property name="text">
+          <string/>
+         </property>
+         <property name="icon">
+          <iconset resource="Recursos.qrc">
+           <normaloff>:/new/imagens/imagens/iWorkstation.png</normaloff>:/new/imagens/imagens/iWorkstation.png</iconset>
+         </property>
+         <property name="iconSize">
+          <size>
+           <width>45</width>
+           <height>45</height>
+          </size>
+         </property>
+        </widget>
+       </item>
+       <item>
+        <widget class="QPushButton" name="btSwitch">
+         <property name="maximumSize">
+          <size>
+           <width>57</width>
+           <height>53</height>
+          </size>
+         </property>
+         <property name="acceptDrops">
+          <bool>true</bool>
+         </property>
+         <property name="text">
+          <string/>
+         </property>
+         <property name="icon">
+          <iconset resource="Recursos.qrc">
+           <normaloff>:/new/imagens/imagens/iSwitch.png</normaloff>:/new/imagens/imagens/iSwitch.png</iconset>
+         </property>
+         <property name="iconSize">
+          <size>
+           <width>45</width>
+           <height>45</height>
+          </size>
+         </property>
+        </widget>
+       </item>
+       <item>
+        <widget class="QPushButton" name="btHub">
+         <property name="maximumSize">
+          <size>
+           <width>57</width>
+           <height>53</height>
+          </size>
+         </property>
+         <property name="acceptDrops">
+          <bool>true</bool>
+         </property>
+         <property name="text">
+          <string/>
+         </property>
+         <property name="icon">
+          <iconset resource="Recursos.qrc">
+           <normaloff>:/new/imagens/imagens/iHub.png</normaloff>:/new/imagens/imagens/iHub.png</iconset>
+         </property>
+         <property name="iconSize">
+          <size>
+           <width>45</width>
+           <height>45</height>
+          </size>
+         </property>
+        </widget>
+       </item>
+       <item>
+        <widget class="QPushButton" name="btRoteador">
+         <property name="maximumSize">
+          <size>
+           <width>57</width>
+           <height>53</height>
+          </size>
+         </property>
+         <property name="acceptDrops">
+          <bool>true</bool>
+         </property>
+         <property name="text">
+          <string/>
+         </property>
+         <property name="icon">
+          <iconset resource="Recursos.qrc">
+           <normaloff>:/new/imagens/imagens/iRouter.png</normaloff>:/new/imagens/imagens/iRouter.png</iconset>
+         </property>
+         <property name="iconSize">
+          <size>
+           <width>45</width>
+           <height>45</height>
+          </size>
+         </property>
+        </widget>
+       </item>
+       <item>
+        <widget class="QPushButton" name="btCaboStraight">
+         <property name="maximumSize">
+          <size>
+           <width>57</width>
+           <height>53</height>
+          </size>
+         </property>
+         <property name="acceptDrops">
+          <bool>true</bool>
+         </property>
+         <property name="text">
+          <string/>
+         </property>
+         <property name="icon">
+          <iconset resource="Recursos.qrc">
+           <normaloff>:/new/imagens/imagens/straight.png</normaloff>:/new/imagens/imagens/straight.png</iconset>
+         </property>
+         <property name="iconSize">
+          <size>
+           <width>45</width>
+           <height>45</height>
+          </size>
+         </property>
+        </widget>
+       </item>
+       <item>
+        <widget class="QPushButton" name="btCaboCross">
+         <property name="maximumSize">
+          <size>
+           <width>57</width>
+           <height>53</height>
+          </size>
+         </property>
+         <property name="acceptDrops">
+          <bool>true</bool>
+         </property>
+         <property name="text">
+          <string/>
+         </property>
+         <property name="icon">
+          <iconset resource="Recursos.qrc">
+           <normaloff>:/new/imagens/imagens/cross.png</normaloff>:/new/imagens/imagens/cross.png</iconset>
+         </property>
+         <property name="iconSize">
+          <size>
+           <width>45</width>
+           <height>45</height>
+          </size>
+         </property>
+        </widget>
+       </item>
+      </layout>
+     </item>
+     <item>
+      <widget class="QGraphicsView" name="diagrama"/>
+     </item>
+    </layout>
    </widget>
   </widget>
   <widget class="QMenuBar" name="menuBar">
