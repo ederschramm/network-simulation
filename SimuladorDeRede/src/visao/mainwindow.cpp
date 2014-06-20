@@ -12,9 +12,11 @@ MainWindow::MainWindow(QWidget *parent) :
     btRoteador = this->ui->btRoteador;
     btCaboStraight = this->ui->btCaboStraight;
     btCaboCross = this->ui->btCaboCross;
+    diagrama = this->ui->diagrama;
 }
 
 MainWindow::~MainWindow()
 {
     delete ui;
 }
+

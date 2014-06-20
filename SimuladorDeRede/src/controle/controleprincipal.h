@@ -4,11 +4,16 @@
 #include "src/visao/mainwindow.h"
 #include "src/modelo/Equipamento.h"
 #include "src/modelo/Computador.h"
+#include "src/modelo/Hub.h"
+#include "src/modelo/Roteador.h"
+#include "src/modelo/Switch.h"
 
 #include <QObject>
 #include <QPushButton>
 #include <QMessageBox>
-#include <vector>
+#include <QLabel>
+#include <map>
+#include <sstream>
 
 using namespace std;
 
@@ -20,7 +25,8 @@ public:
 private:
     MainWindow* mainWindow;
     void listeners();
-    vector<Equipamento*> equipamentos;
+    map<QLabel*, Equipamento*> equipamentos;
+    string equipamento;
 private slots:
     void onClickButtonComputador();
     void onClickButtonSwitch();
