@@ -1,13 +1,11 @@
 #ifndef EQUIPAMENTO_H
 #define EQUIPAMENTO_H
-
-#include "interfacerede.h"
-
+#include "interface.h"
 #include <string>
 
 using namespace std;
 
-class InterfaceRede;
+class Interface;
 
 class Equipamento
 {
@@ -16,11 +14,11 @@ public:
     Equipamento(string nome);
     string getNome();
     void setNome(string nome);
-    InterfaceRede* getInterfaceRede();
-    void setInterfaceRede(InterfaceRede *interfaceRede);
+    Interface* getInterface();
+    void setInterface(Interface *interfaceRede);
 private:
     string nome;
-    InterfaceRede *interfaceRede;
+    Interface *interface;
 };
 
 #endif // EQUIPAMENTO_H
