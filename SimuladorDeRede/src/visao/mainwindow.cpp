@@ -8,7 +8,8 @@ MainWindow::MainWindow(QWidget *parent) :
     ui->setupUi(this);
     scene = new QGraphicsScene();
     scene->setSceneRect(0,0,554,409);
-    ui->diagrama->setScene(scene);
+    ViewGraphics *view = new ViewGraphics(ui->diagrama);
+    view->setScene(scene);
 }
 
 MainWindow::~MainWindow()
