@@ -7,6 +7,8 @@
 #include <QGroupBox>
 #include <QPushButton>
 
+class MainWindow;
+
 class ControleConfiguracaoHub : public QObject
 {
     Q_OBJECT

@@ -8,8 +8,11 @@ MainWindow::MainWindow(QWidget *parent) :
     ui->setupUi(this);
     scene = new QGraphicsScene();
     scene->setSceneRect(0,0,554,409);
-    ViewGraphics *view = new ViewGraphics(ui->diagrama);
-    view->setScene(scene);
+    ui->diagrama->setScene(scene);
+    ui->diagrama->setMainWindow(this);
+    //ViewGraphics *view = new ViewGraphics(ui->diagrama);
+    //view->setScene(scene);
+    //view->setMainWindow(this);
 }
 
 MainWindow::~MainWindow()
@@ -92,28 +95,4 @@ void MainWindow::dragMoveEvent(QDragMoveEvent *event){
 void MainWindow::dropEvent(QDropEvent *event){
     //mensagem de debug
     qDebug()<<"MainWindow::dropEvent(QDropEvent *event)";
-
-    if (event->mimeData()->hasFormat("application/x-dnditemdata")) {
-        QByteArray itemData = event->mimeData()->data("application/x-dnditemdata");
-        QDataStream dataStream(&itemData, QIODevice::ReadOnly);
-
-        QPixmap pixmap;
-        QPoint offset;
-        dataStream >> pixmap >> offset;
-
-        QLabel *newIcon = new QLabel(this);
-        newIcon->setPixmap(pixmap);
-        newIcon->move(event->pos() - offset);
-        newIcon->show();
-        newIcon->setAttribute(Qt::WA_DeleteOnClose);
-
-        if (event->source() == this) {
-            event->setDropAction(Qt::MoveAction);
-            event->accept();
-        } else {
-            event->acceptProposedAction();
-        }
-    } else {
-        event->ignore();
-    }
 }
