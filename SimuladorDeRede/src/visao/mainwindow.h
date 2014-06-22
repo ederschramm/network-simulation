@@ -5,9 +5,21 @@
 #include <QPushButton>
 #include <QWidget>
 #include <QGraphicsView>
+#include <QGraphicsScene>
+#include <QGraphicsItem>
+#include <QMouseEvent>
+#include <QDropEvent>
+#include <QDebug>
+#include <QByteArray>
+#include <QDataStream>
+#include <QMimeData>
+#include <QDrag>
 
 namespace Ui {
 class MainWindow;
+class Widget;
+class QDragEnterEvent;
+class QDropEvent;
 }
 
 class MainWindow : public QMainWindow
@@ -17,13 +29,12 @@ class MainWindow : public QMainWindow
 public:
     explicit MainWindow(QWidget *parent = 0);
     ~MainWindow();
-    QPushButton *btComputador;
-    QPushButton *btSwitch;
-    QPushButton *btHub;
-    QPushButton *btRoteador;
-    QPushButton *btCaboStraight;
-    QPushButton *btCaboCross;
-    QGraphicsView *diagrama;
+    QGraphicsScene *scene;
+private slots:
+    void mousePressEvent(QMouseEvent *event);
+    void dragEnterEvent(QDragEnterEvent *event);
+    void dragMoveEvent(QDragMoveEvent *event);
+    void dropEvent(QDropEvent *event);
 private:
     Ui::MainWindow *ui;
 };
