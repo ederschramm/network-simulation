@@ -9,6 +9,8 @@
 #include <QWidget>
 #include <QMessageBox>
 
+class MainWindow;
+
 class ControleConfiguracaoHost : public QObject
 {
     Q_OBJECT
