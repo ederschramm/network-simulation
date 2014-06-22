@@ -18,7 +18,7 @@
     <normaloff>:/new/imagens/imagens/iMultiDevices.png</normaloff>:/new/imagens/imagens/iMultiDevices.png</iconset>
   </property>
   <widget class="QWidget" name="centralWidget">
-   <widget class="QWidget" name="">
+   <widget class="QWidget" name="layoutWidget">
     <property name="geometry">
      <rect>
       <x>10</x>
@@ -34,158 +34,54 @@
      <item>
       <layout class="QVBoxLayout" name="verticalLayout">
        <item>
-        <widget class="QPushButton" name="btComputador">
-         <property name="maximumSize">
-          <size>
-           <width>57</width>
-           <height>53</height>
-          </size>
-         </property>
-         <property name="acceptDrops">
-          <bool>true</bool>
+        <widget class="QLabel" name="laComputador">
+         <property name="cursor">
+          <cursorShape>OpenHandCursor</cursorShape>
          </property>
          <property name="text">
           <string/>
          </property>
-         <property name="icon">
-          <iconset resource="Recursos.qrc">
-           <normaloff>:/new/imagens/imagens/iWorkstation.png</normaloff>:/new/imagens/imagens/iWorkstation.png</iconset>
-         </property>
-         <property name="iconSize">
-          <size>
-           <width>45</width>
-           <height>45</height>
-          </size>
+         <property name="pixmap">
+          <pixmap resource="Recursos.qrc">:/new/imagens/imagens/iWorkstation.png</pixmap>
          </property>
         </widget>
        </item>
        <item>
-        <widget class="QPushButton" name="btSwitch">
-         <property name="maximumSize">
-          <size>
-           <width>57</width>
-           <height>53</height>
-          </size>
-         </property>
-         <property name="acceptDrops">
-          <bool>true</bool>
+        <widget class="QLabel" name="laSwitch">
+         <property name="cursor">
+          <cursorShape>OpenHandCursor</cursorShape>
          </property>
          <property name="text">
           <string/>
          </property>
-         <property name="icon">
-          <iconset resource="Recursos.qrc">
-           <normaloff>:/new/imagens/imagens/iSwitch.png</normaloff>:/new/imagens/imagens/iSwitch.png</iconset>
-         </property>
-         <property name="iconSize">
-          <size>
-           <width>45</width>
-           <height>45</height>
-          </size>
+         <property name="pixmap">
+          <pixmap resource="Recursos.qrc">:/new/imagens/imagens/iSwitch.png</pixmap>
          </property>
         </widget>
        </item>
        <item>
-        <widget class="QPushButton" name="btHub">
-         <property name="maximumSize">
-          <size>
-           <width>57</width>
-           <height>53</height>
-          </size>
-         </property>
-         <property name="acceptDrops">
-          <bool>true</bool>
+        <widget class="QLabel" name="laHub">
+         <property name="cursor">
+          <cursorShape>OpenHandCursor</cursorShape>
          </property>
          <property name="text">
           <string/>
          </property>
-         <property name="icon">
-          <iconset resource="Recursos.qrc">
-           <normaloff>:/new/imagens/imagens/iHub.png</normaloff>:/new/imagens/imagens/iHub.png</iconset>
-         </property>
-         <property name="iconSize">
-          <size>
-           <width>45</width>
-           <height>45</height>
-          </size>
+         <property name="pixmap">
+          <pixmap resource="Recursos.qrc">:/new/imagens/imagens/iHub.png</pixmap>
          </property>
         </widget>
        </item>
        <item>
-        <widget class="QPushButton" name="btRoteador">
-         <property name="maximumSize">
-          <size>
-           <width>57</width>
-           <height>53</height>
-          </size>
-         </property>
-         <property name="acceptDrops">
-          <bool>true</bool>
+        <widget class="QLabel" name="laRoteador">
+         <property name="cursor">
+          <cursorShape>OpenHandCursor</cursorShape>
          </property>
          <property name="text">
           <string/>
          </property>
-         <property name="icon">
-          <iconset resource="Recursos.qrc">
-           <normaloff>:/new/imagens/imagens/iRouter.png</normaloff>:/new/imagens/imagens/iRouter.png</iconset>
-         </property>
-         <property name="iconSize">
-          <size>
-           <width>45</width>
-           <height>45</height>
-          </size>
-         </property>
-        </widget>
-       </item>
-       <item>
-        <widget class="QPushButton" name="btCaboStraight">
-         <property name="maximumSize">
-          <size>
-           <width>57</width>
-           <height>53</height>
-          </size>
-         </property>
-         <property name="acceptDrops">
-          <bool>true</bool>
-         </property>
-         <property name="text">
-          <string/>
-         </property>
-         <property name="icon">
-          <iconset resource="Recursos.qrc">
-           <normaloff>:/new/imagens/imagens/straight.png</normaloff>:/new/imagens/imagens/straight.png</iconset>
-         </property>
-         <property name="iconSize">
-          <size>
-           <width>45</width>
-           <height>45</height>
-          </size>
-         </property>
-        </widget>
-       </item>
-       <item>
-        <widget class="QPushButton" name="btCaboCross">
-         <property name="maximumSize">
-          <size>
-           <width>57</width>
-           <height>53</height>
-          </size>
-         </property>
-         <property name="acceptDrops">
-          <bool>true</bool>
-         </property>
-         <property name="text">
-          <string/>
-         </property>
-         <property name="icon">
-          <iconset resource="Recursos.qrc">
-           <normaloff>:/new/imagens/imagens/cross.png</normaloff>:/new/imagens/imagens/cross.png</iconset>
-         </property>
-         <property name="iconSize">
-          <size>
-           <width>45</width>
-           <height>45</height>
-          </size>
+         <property name="pixmap">
+          <pixmap resource="Recursos.qrc">:/new/imagens/imagens/iRouter.png</pixmap>
          </property>
         </widget>
        </item>
