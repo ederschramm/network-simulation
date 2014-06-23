@@ -26,14 +26,16 @@ HEADERS  += src\controle\controleprincipal.h\
         src\modelo\datagrama.h\
         src\modelo\segmento.h\
         src\modelo\dados.h\
-        src\modelo\interface.h\
+        src\modelo\interfacepc.h\
         src\modelo\interfacerede.h\
         src\visao\mainwindow.h\
         src\visao\ConfiguracaoHubDialog.h\
         src\visao\ConfiguracaoHostDialog.h\
         src\visao\ConfiguracaoRoteadorDialog.h\
         src\visao\ConfiguracaoSwitchDialog.h \
-    src/visao/viewgraphics.h
+    src/visao/viewgraphics.h \
+    src/modelo/cabo.h \
+    src/modelo/interfacehub.h
 
 SOURCES += src\main.cpp\
         src\controle\controleprincipal.cpp\
@@ -53,14 +55,16 @@ SOURCES += src\main.cpp\
         src\modelo\datagrama.cpp\
         src\modelo\segmento.cpp\
         src\modelo\dados.cpp\
-        src\modelo\interface.cpp\
+        src\modelo\interfacepc.cpp\
         src\modelo\interfacerede.cpp\
         src\visao\mainwindow.cpp\
         src\visao\ConfiguracaoHubDialog.cpp\
         src\visao\ConfiguracaoHostDialog.cpp\
         src\visao\ConfiguracaoRoteadorDialog.cpp\
         src\visao\ConfiguracaoSwitchDialog.cpp \
-    src/visao/viewgraphics.cpp
+    src/visao/viewgraphics.cpp \
+    src/modelo/cabo.cpp \
+    src/modelo/interfacehub.cpp
 
 FORMS    += src\visao\mainwindow.ui\
         src\visao\ConfiguracaoHubDialog.ui\
