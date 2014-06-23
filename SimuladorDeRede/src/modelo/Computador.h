@@ -1,26 +1,20 @@
 #ifndef COMPUTADOR_H
 #define COMPUTADOR_H
-
-#include "equipamento.h"
-
-#include <Map>
-#include <string>
+#include <QString>
+#include "interfacerede.h".h"
 
 using namespace std;
 
-class Computador : public Equipamento
+class Computador
 {
 public:
     Computador();
-    void addIP(int interfaceRede, string ip);
-    void addMAC(int interfaceRede, string mac);
-    void delIP(int interfaceRede);
-    void delMAC(int interfaceRede);
-    string findIP(int interfaceRede);
-    string findMAC(int interfaceRede);
-private:
-    map<int, string> ip;
-    map<int, string> mac;
+    QString nome;
+    QString ip;
+    QString mac;
+    QString gateway;
+    QString mascara;
+    InterfaceRede *interface;
 };
 
 #endif // COMPUTADOR_H
