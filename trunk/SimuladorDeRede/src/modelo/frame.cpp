@@ -2,4 +2,5 @@
 
 Frame::Frame()
 {
+    this->num = 10;
 }

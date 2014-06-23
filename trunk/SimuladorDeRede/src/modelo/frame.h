@@ -5,6 +5,7 @@ class Frame
 {
 public:
     Frame();
+    int num;
 };
 
 #endif // FRAME_H
