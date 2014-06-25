@@ -3,10 +3,6 @@
 
 #include "src/visao/mainwindow.h"
 #include "src/modelo/Equipamento.h"
-#include "src/modelo/Computador.h"
-#include "src/modelo/Hub.h"
-#include "src/modelo/Roteador.h"
-#include "src/modelo/Switch.h"
 
 #include <QObject>
 #include <QPushButton>
