@@ -19,6 +19,7 @@ public:
     void setCabo(Cabo *cabo);
     Frame* getFrame();
     void setFrame(Frame *frame);
+    void enviaFrame(Frame *frame);
     Equipamento* getEquipamento();
     void setEquipamento(Equipamento *equipamento);
 private:
