@@ -30,7 +30,8 @@ HEADERS  += src\controle\controleprincipal.h\
     src/modelo/observador.h \
     src/modelo/datagrama.h \
     src/modelo/segmento.h \
-    src/modelo/dado.h
+    src/modelo/dado.h \
+    src/modelo/tabelaarp.h
 
 SOURCES += src\main.cpp\
         src\controle\controleprincipal.cpp\
@@ -54,7 +55,8 @@ SOURCES += src\main.cpp\
     src/modelo/observador.cpp \
     src/modelo/datagrama.cpp \
     src/modelo/segmento.cpp \
-    src/modelo/dado.cpp
+    src/modelo/dado.cpp \
+    src/modelo/tabelaarp.cpp
 
 FORMS    += src\visao\mainwindow.ui\
         src\visao\ConfiguracaoHubDialog.ui\
