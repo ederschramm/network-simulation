@@ -17,6 +17,8 @@ public:
     void setNome(string nome);
     void addInterfaceRede(InterfaceRede *interfaceRede);
     void delInterfaceRede(InterfaceRede *interfaceRede);
+    virtual void configuracaoInicial(InterfaceRede *interfaceRede)=0;
+    virtual void removerConfiguracao(InterfaceRede *interfaceRede)=0;
     InterfaceRede* findInterfaceRede(int numero);
 protected:
     string nome;

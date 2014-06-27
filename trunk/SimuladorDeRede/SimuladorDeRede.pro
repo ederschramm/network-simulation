@@ -24,7 +24,10 @@ HEADERS  += src\controle\controleprincipal.h\
     src/modelo/interfacerede.h \
     src/modelo/cabo.h \
     src/modelo/computador.h \
-    src/modelo/switch.h
+    src/modelo/switch.h \
+    src/modelo/frame.h \
+    src/modelo/observavel.h \
+    src/modelo/observador.h
 
 SOURCES += src\main.cpp\
         src\controle\controleprincipal.cpp\
@@ -42,7 +45,10 @@ SOURCES += src\main.cpp\
     src/modelo/interfacerede.cpp \
     src/modelo/cabo.cpp \
     src/modelo/computador.cpp \
-    src/modelo/switch.cpp
+    src/modelo/switch.cpp \
+    src/modelo/frame.cpp \
+    src/modelo/observavel.cpp \
+    src/modelo/observador.cpp
 
 FORMS    += src\visao\mainwindow.ui\
         src\visao\ConfiguracaoHubDialog.ui\

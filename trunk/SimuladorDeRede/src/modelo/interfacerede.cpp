@@ -1,4 +1,5 @@
-#include "src/modelo/interfacerede.h"
+#include "interfacerede.h"
+#include <QDebug>
 
 InterfaceRede::InterfaceRede()
 {
@@ -19,6 +20,16 @@ Cabo* InterfaceRede::getCabo(){
 
 void InterfaceRede::setCabo(Cabo *cabo){
     this->cabo = cabo;
+}
+
+Frame* InterfaceRede::getFrame(){
+    return this->frame;
+}
+
+void InterfaceRede::setFrame(Frame *frame){
+    qDebug()<<"InterfaceRede::setFrame(Frame *frame)";
+    this->frame = frame;
+    this->notificaObservadores();
 }
 
 Equipamento* InterfaceRede::getEquipamento(){

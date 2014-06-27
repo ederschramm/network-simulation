@@ -1,15 +1,23 @@
-#include "src/modelo/computador.h"
+#include "computador.h"
+#include <QDebug>
 
 Computador::Computador()
 {
 }
 
-void Computador::addIP(int numero, string ip){
+void Computador::configuraIP(int numero, string ip){
     this->ip[numero]=ip;
 }
 
-void Computador::addMAC(int numero, string mac){
+void Computador::configuraMAC(int numero, string mac){
+    qDebug()<<"Computador::addMAC(int numero, string mac)";
     this->mac[numero]=mac;
+    for (vector<InterfaceRede*>::iterator it = this->interfaces.begin(); it != this->interfaces.end(); it++){
+        InterfaceRede* interface = *it;
+        if (interface->getNumero()==numero){
+            interface->addObservador(this);
+        }
+    }
 }
 
 void Computador::delIP(int numero){
@@ -30,4 +38,21 @@ string Computador::findMAC(int numero){
     map<int,string>::iterator it = this->mac.find(numero);
     string retorno = it->second;
     return retorno;
+}
+
+void Computador::atualiza(Observavel *observavel){
+    qDebug()<<"Computador::atualiza(Observavel *observavel)";
+    InterfaceRede *interface = (InterfaceRede*) observavel;
+}
+
+void Computador::configuracaoInicial(InterfaceRede *interfaceRede){
+    qDebug()<<"Computador::configuracaoInicial(InterfaceRede *interfaceRede)";
+    this->configuraIP(interfaceRede->getNumero(),"");
+    this->configuraMAC(interfaceRede->getNumero(),"");
+}
+
+void Computador::removerConfiguracao(InterfaceRede *interfaceRede){
+    qDebug()<<"Computador::removerConfiguracao(InterfaceRede *interfaceRede)";
+    this->delIP(interfaceRede->getNumero());
+    this->delMAC(interfaceRede->getNumero());
 }
