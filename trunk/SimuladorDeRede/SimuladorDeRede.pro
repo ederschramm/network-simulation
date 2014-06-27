@@ -27,7 +27,10 @@ HEADERS  += src\controle\controleprincipal.h\
     src/modelo/switch.h \
     src/modelo/frame.h \
     src/modelo/observavel.h \
-    src/modelo/observador.h
+    src/modelo/observador.h \
+    src/modelo/datagrama.h \
+    src/modelo/segmento.h \
+    src/modelo/dado.h
 
 SOURCES += src\main.cpp\
         src\controle\controleprincipal.cpp\
@@ -48,7 +51,10 @@ SOURCES += src\main.cpp\
     src/modelo/switch.cpp \
     src/modelo/frame.cpp \
     src/modelo/observavel.cpp \
-    src/modelo/observador.cpp
+    src/modelo/observador.cpp \
+    src/modelo/datagrama.cpp \
+    src/modelo/segmento.cpp \
+    src/modelo/dado.cpp
 
 FORMS    += src\visao\mainwindow.ui\
         src\visao\ConfiguracaoHubDialog.ui\

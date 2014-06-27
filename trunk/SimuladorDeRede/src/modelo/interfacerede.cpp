@@ -32,6 +32,11 @@ void InterfaceRede::setFrame(Frame *frame){
     this->notificaObservadores();
 }
 
+void InterfaceRede::enviaFrame(Frame *frame){
+    qDebug()<<"InterfaceRede::enviaFrame(Frame *frame)";
+    this->cabo->enviar(this,frame);
+}
+
 Equipamento* InterfaceRede::getEquipamento(){
     return this->equipamento;
 }

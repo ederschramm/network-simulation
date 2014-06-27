@@ -1,25 +1,25 @@
-#ifndef FRAME_H
-#define FRAME_H
+#ifndef SEGMENTO_H
+#define SEGMENTO_H
 
-#include "src/modelo/datagrama.h"
+#include "src/modelo/dado.h"
 #include <string>
 
 using namespace std;
 
-class Frame
+class Segmento
 {
 public:
-    Frame();
+    Segmento();
     string getOrigem();
     void setOrigem(string origem);
     string getDestino();
     void setDestino(string destino);
-    Datagrama* getDado();
-    void setDado(Datagrama *dado);
+    Dado* getDado();
+    void setDado(Dado *dado);
 private:
     string origem;
     string destino;
-    Datagrama* dado;
+    Dado *dado;
 };
 
-#endif // FRAME_H
+#endif // SEGMENTO_H

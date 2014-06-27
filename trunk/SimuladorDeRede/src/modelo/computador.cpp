@@ -43,6 +43,8 @@ string Computador::findMAC(int numero){
 void Computador::atualiza(Observavel *observavel){
     qDebug()<<"Computador::atualiza(Observavel *observavel)";
     InterfaceRede *interface = (InterfaceRede*) observavel;
+    string origem = interface->getFrame()->getOrigem();
+    qDebug()<< QString::fromStdString(origem);
 }
 
 void Computador::configuracaoInicial(InterfaceRede *interfaceRede){

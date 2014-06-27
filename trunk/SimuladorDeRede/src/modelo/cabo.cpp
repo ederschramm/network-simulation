@@ -34,8 +34,10 @@ void Cabo::enviar(InterfaceRede *i, Frame *frame){
     qDebug()<<"Cabo::enviar(InterfaceRede *i, Frame *frame)";
     if (i == a) {
         qDebug()<<"i == a";
+        a->setFrame(frame);
     }
     if (i == b){
         qDebug()<<"i == b";
+        b->setFrame(frame);
     }
 }
