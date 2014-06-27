@@ -43,8 +43,7 @@ string Computador::findMAC(int numero){
 void Computador::atualiza(Observavel *observavel){
     qDebug()<<"Computador::atualiza(Observavel *observavel)";
     InterfaceRede *interface = (InterfaceRede*) observavel;
-    string origem = interface->getFrame()->getOrigem();
-    qDebug()<< QString::fromStdString(origem);
+    this->abrir(interface->getFrame(), interface->getNumero());
 }
 
 void Computador::configuracaoInicial(InterfaceRede *interfaceRede){
@@ -57,4 +56,27 @@ void Computador::removerConfiguracao(InterfaceRede *interfaceRede){
     qDebug()<<"Computador::removerConfiguracao(InterfaceRede *interfaceRede)";
     this->delIP(interfaceRede->getNumero());
     this->delMAC(interfaceRede->getNumero());
+}
+
+void Computador::abrir(Frame *frame, int interface){
+    qDebug()<<"Computador::abrir(Frame *frame)";
+    if(frame->getDestino()==this->findMAC(interface)){
+        this->abrir(frame->getDado(),interface);
+    }
+}
+
+void Computador::abrir(Datagrama *datagrama, int interface){
+    qDebug()<<"Computador::abrir(Datagrama *datagrama, int interface)";
+    if(datagrama->getDestino()==this->findIP(interface)){
+        this->abrir(datagrama->getDado());
+    }
+}
+
+void Computador::abrir(Segmento *segmento){
+    qDebug()<<"Computador::abrir(Segmento *segmento)";
+    this->abrir(segmento->getDado());
+}
+
+void Computador::abrir(Dado *dado){
+    qDebug()<<"Computador::abrir(Dado *dado)";
 }
