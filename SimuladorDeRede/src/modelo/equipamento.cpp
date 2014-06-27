@@ -1,4 +1,4 @@
-#include "src/modelo/equipamento.h"
+#include "equipamento.h"
 
 Equipamento::Equipamento()
 {
@@ -15,6 +15,7 @@ void Equipamento::setNome(string nome){
 
 void Equipamento::addInterfaceRede(InterfaceRede *interfaceRede){
     this->interfaces.push_back(interfaceRede);
+    this->configuracaoInicial(interfaceRede);
 }
 
 void Equipamento::delInterfaceRede(InterfaceRede *interfaceRede){
@@ -29,6 +30,7 @@ void Equipamento::delInterfaceRede(InterfaceRede *interfaceRede){
     }
     if (achou){
         this->interfaces.erase(i);
+        this->removerConfiguracao(interfaceRede);
     }
 }
 

@@ -2,6 +2,7 @@
 #define CABO_H
 
 #include "src/modelo/interfacerede.h"
+#include "src/modelo/frame.h"
 #include <string>
 
 using namespace std;
@@ -18,6 +19,7 @@ public:
     void setA(InterfaceRede *a);
     InterfaceRede* getB();
     void setB(InterfaceRede *b);
+    void enviar(InterfaceRede *i, Frame *frame);
 private:
     string tipo;
     InterfaceRede *a;

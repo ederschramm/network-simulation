@@ -1,4 +1,5 @@
-#include "src/modelo/cabo.h"
+#include "cabo.h"
+#include <QDebug>
 
 Cabo::Cabo()
 {
@@ -27,4 +28,14 @@ InterfaceRede* Cabo::getB(){
 
 void Cabo::setB(InterfaceRede *b){
     this->b = b;
+}
+
+void Cabo::enviar(InterfaceRede *i, Frame *frame){
+    qDebug()<<"Cabo::enviar(InterfaceRede *i, Frame *frame)";
+    if (i == a) {
+        qDebug()<<"i == a";
+    }
+    if (i == b){
+        qDebug()<<"i == b";
+    }
 }
