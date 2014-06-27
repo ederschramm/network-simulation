@@ -23,7 +23,10 @@ SOURCES += tst_test.cpp \
     ../SimuladorDeRede/src/modelo/frame.cpp \
     ../SimuladorDeRede/src/modelo/equipamento.cpp \
     ../SimuladorDeRede/src/modelo/computador.cpp \
-    ../SimuladorDeRede/src/modelo/cabo.cpp
+    ../SimuladorDeRede/src/modelo/cabo.cpp \
+    ../SimuladorDeRede/src/modelo/segmento.cpp \
+    ../SimuladorDeRede/src/modelo/datagrama.cpp \
+    ../SimuladorDeRede/src/modelo/dado.cpp
 
 HEADERS += \
     ../SimuladorDeRede/src/modelo/switch.h \
@@ -33,6 +36,9 @@ HEADERS += \
     ../SimuladorDeRede/src/modelo/frame.h \
     ../SimuladorDeRede/src/modelo/equipamento.h \
     ../SimuladorDeRede/src/modelo/computador.h \
-    ../SimuladorDeRede/src/modelo/cabo.h
+    ../SimuladorDeRede/src/modelo/cabo.h \
+    ../SimuladorDeRede/src/modelo/segmento.h \
+    ../SimuladorDeRede/src/modelo/datagrama.h \
+    ../SimuladorDeRede/src/modelo/dado.h
 
 INCLUDEPATH +=../SimuladorDeRede

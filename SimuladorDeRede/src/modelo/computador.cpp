@@ -79,4 +79,32 @@ void Computador::abrir(Segmento *segmento){
 
 void Computador::abrir(Dado *dado){
     qDebug()<<"Computador::abrir(Dado *dado)";
+    if(dado->getDados().find("ping") != std::string::npos){
+        string destino = dado->getDados().substr(3,dado->getDados().size()-1);
+        qDebug()<<QString::fromStdString(destino);
+        Dado *novo = new Dado();
+        novo->setDados("sucefull");
+        //this->encapsula(novo);
+    }
+    if (dado->getDados().find("sucefull") != std::string::npos){
+
+    }
+}
+
+void Computador::encapsula(Dado *dado, string ip){
+    qDebug()<<"Computador::encapsula(Dado *dado)";
+    Segmento *segmento = new Segmento();
+    segmento->setDado(dado);
+    encapsula(segmento,ip);
+}
+
+void Computador::encapsula(Segmento *segmento, string ip){
+    qDebug()<<"Computador::encapsula(Segmento *segmento)";
+    Datagrama *datagrama = new Datagrama();
+    datagrama->setDado(segmento);
+    datagrama->setDestino(ip);
+}
+
+void Computador::encapsula(Datagrama *datagrama){
+    qDebug()<<"Computador::encapsula(Datagrama *datagrama)";
 }

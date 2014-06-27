@@ -9,6 +9,9 @@
 #include "src/modelo/observador.h"
 #include "src/modelo/observavel.h"
 #include "src/modelo/switch.h"
+#include "src/modelo/segmento.h"
+#include "src/modelo/datagrama.h"
+#include "src/modelo/dado.h"
 
 using namespace std;
 
@@ -54,6 +57,12 @@ void Test::pcCrossPc()
     pc02->configuraIP(1, "10.0.0.2");
     pc02->configuraMAC(1, "BB:BB:BB:BB:BB:BB");
 
+    Dado *dado = new Dado();
+    dado->setDados("ping 10.0.0.2");
+    Segmento *segmento = new Segmento();
+    segmento->setDado(dado);
+    segmento->setDestino("10.0.0.2");
+    Datagrama *datagrama
     Frame *frame = new Frame();
     frame->setDestino("BB:BB:BB:BB:BB:BB");
     frame->setOrigem("AA:AA:AA:AA:AA:AA");

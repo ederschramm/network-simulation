@@ -4,6 +4,7 @@
 #include "src/modelo/equipamento.h"
 #include "src/modelo/observador.h"
 #include "src/modelo/interfacerede.h"
+#include "src/modelo/tabelaarp.h"
 #include <map>
 #include <string>
 
@@ -27,8 +28,12 @@ private:
     void abrir(Datagrama *datagrama, int interface);
     void abrir(Segmento *segmento);
     void abrir(Dado *dado);
+    void encapsula(Dado *dado, string ip);
+    void encapsula(Segmento *segmento, string ip);
+    void encapsula(Datagrama *datagrama);
     map<int,string> ip;
     map<int,string> mac;
+    map<int,TabelaARP> tabelaARP;
 };
 
 #endif // COMPUTADOR_H
