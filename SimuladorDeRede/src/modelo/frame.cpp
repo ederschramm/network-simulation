@@ -25,5 +25,5 @@ Datagrama* Frame::getDado(){
 }
 
 void Frame::setDado(Datagrama *dado){
-    return this->dado;
+    this->dado = dado;
 }

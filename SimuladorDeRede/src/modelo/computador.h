@@ -23,6 +23,10 @@ public:
     void configuracaoInicial(InterfaceRede *interfaceRede);
     void removerConfiguracao(InterfaceRede *interfaceRede);
 private:
+    void abrir(Frame *frame, int interface);
+    void abrir(Datagrama *datagrama, int interface);
+    void abrir(Segmento *segmento);
+    void abrir(Dado *dado);
     map<int,string> ip;
     map<int,string> mac;
 };
